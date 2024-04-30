@@ -1,0 +1,218 @@
+[
+  {
+    "Id": 1,
+    "Name": "Credinissan Plus Clasic",
+    "Active": false,
+    "AllUsers": true,
+    "AllVersion": true,
+    "TipoCredito": {
+      "Id": 1,
+      "Descripcion": "Inteligente"
+    },
+    "Plazos": [
+      {
+        "Id": 12,
+        "Vfmg": 50
+      },
+      {
+        "Id": 18,
+        "Vfmg": 50
+      },
+      {
+        "Id": 24,
+        "Vfmg": 50
+      },
+      {
+        "Id": 36,
+        "Vfmg": 40
+      },
+      {
+        "Id": 42,
+        "Vfmg": 40
+      },
+      {
+        "Id": 48,
+        "Vfmg": 30
+      }
+    ],
+    "Tasas": [
+      {
+        "Id": 1,
+        "UFMin": 0,
+        "UFMax": 200,
+        "PlazoMin": 6,
+        "PlazoMax": 36,
+        "TasaPiso": 0.0267,
+        "TasaPagare": 0.0267
+      },
+      {
+        "Id": 2,
+        "UFMin": 200,
+        "UFMax": 5000,
+        "PlazoMin": 6,
+        "PlazoMax": 36,
+        "TasaPiso": 0.0267,
+        "TasaPagare": 0.0267
+      },
+      {
+        "Id": 3,
+        "UFMin": 0,
+        "UFMax": 200,
+        "PlazoMin": 37,
+        "PlazoMax": 72,
+        "TasaPiso": 0.0267,
+        "TasaPagare": 0.0267
+      },
+      {
+        "Id": 4,
+        "UFMin": 200,
+        "UFMax": 5000,
+        "PlazoMin": 37,
+        "PlazoMax": 72,
+        "TasaPiso": 0.0267,
+        "TasaPagare": 0.0267
+      }
+    ],
+    "Versions": [
+      {
+        "Id": 101,
+        "Nombre": "Sense MT",
+        "Modelo": {
+          "Id": 1,
+          "Nombre": "Versa"
+        }
+      },
+      {
+        "Id": 102,
+        "Nombre": "Advance MT",
+        "Modelo": {
+          "Id": 1,
+          "Nombre": "Versa"
+        }
+      },
+      {
+        "Id": 103,
+        "Nombre": "Advance CVT",
+        "Modelo": {
+          "Id": 1,
+          "Nombre": "Versa"
+        }
+      },
+      {
+        "Id": 104,
+        "Nombre": "Exclusive CVT",
+        "Modelo": {
+          "Id": 1,
+          "Nombre": "Versa"
+        }
+      }
+    ],
+    "Users": [
+      {
+        "Id": 1,
+        "Username": "EC2AMAZ-7MTC17K\rcerda",
+        "Activo": true
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "Name": "Convencional Clasic",
+    "Active": true,
+    "AllUsers": true,
+    "AllVersion": false,
+    "TipoCredito": {
+      "Id": 2,
+      "Descripcion": "Convencional"
+    },
+    "Plazos": [
+      {
+        "Id": 6,
+        "Vfmg": 0
+      },
+      {
+        "Id": 60,
+        "Vfmg": 0
+      }
+    ],
+    "Tasas": [
+      {
+        "Id": 1,
+        "UFMin": 0,
+        "UFMax": 200,
+        "PlazoMin": 6,
+        "PlazoMax": 36,
+        "TasaPiso": 0.0267,
+        "TasaPagare": 0.0267
+      },
+      {
+        "Id": 2,
+        "UFMin": 200,
+        "UFMax": 5000,
+        "PlazoMin": 6,
+        "PlazoMax": 36,
+        "TasaPiso": 0.0267,
+        "TasaPagare": 0.0267
+      },
+      {
+        "Id": 3,
+        "UFMin": 0,
+        "UFMax": 200,
+        "PlazoMin": 37,
+        "PlazoMax": 72,
+        "TasaPiso": 0.0267,
+        "TasaPagare": 0.0267
+      },
+      {
+        "Id": 4,
+        "UFMin": 200,
+        "UFMax": 5000,
+        "PlazoMin": 37,
+        "PlazoMax": 72,
+        "TasaPiso": 0.0267,
+        "TasaPagare": 0.0267
+      }
+    ],
+    "Versions": [
+      {
+        "Id": 101,
+        "Nombre": "Sense MT",
+        "Modelo": {
+          "Id": 1,
+          "Nombre": "Versa"
+        }
+      },
+      {
+        "Id": 102,
+        "Nombre": "Advance MT",
+        "Modelo": {
+          "Id": 1,
+          "Nombre": "Versa"
+        }
+      },
+      {
+        "Id": 103,
+        "Nombre": "Advance CVT",
+        "Modelo": {
+          "Id": 1,
+          "Nombre": "Versa"
+        }
+      },
+      {
+        "Id": 104,
+        "Nombre": "Exclusive CVT",
+        "Modelo": {
+          "Id": 1,
+          "Nombre": "Versa"
+        }
+      }
+    ],
+    "Users": [
+      {
+        "Id": 1,
+        "Username": "EC2AMAZ-7MTC17K\rcerda",
+        "Activo": true
+      }
+    ]
+  }
+]

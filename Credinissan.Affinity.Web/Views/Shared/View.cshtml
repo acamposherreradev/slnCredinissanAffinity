@@ -1,0 +1,99 @@
+﻿@model IEnumerable<Credinissan.Affinity.Web.Data.DataObject.Contratante>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Rut)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ApPaterno)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ApMaterno)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaNacimiento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Direccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Actividad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Renta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaInicioActividad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RutEmpleador)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreEmpleador)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rut)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ApPaterno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ApMaterno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaNacimiento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Direccion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Actividad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Renta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaInicioActividad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RutEmpleador)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreEmpleador)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,354 @@
+[
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 119213129,
+    "Nombre": "ALTIMA"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 119214173,
+    "Nombre": "MURANO"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 119214174,
+    "Nombre": "370Z"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 119214175,
+    "Nombre": "JUKE"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 119214176,
+    "Nombre": "ALTIMA"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 119214177,
+    "Nombre": "NAVARA"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 119214178,
+    "Nombre": "NOTE"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 119214179,
+    "Nombre": "PATHFINDER"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 119214180,
+    "Nombre": "PLATINA"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 119214181,
+    "Nombre": "TERRANO PICK UP"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 119214190,
+    "Nombre": "QASHQAI 2"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 119214191,
+    "Nombre": "SENTRA"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 119214192,
+    "Nombre": "TEANA"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 119214193,
+    "Nombre": "TIIDA"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 119214194,
+    "Nombre": "V16"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 119214331,
+    "Nombre": "PATHFINDER"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 119245396,
+    "Nombre": "TIIDA"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 119246100,
+    "Nombre": "X-TRAIL"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 170629807,
+    "Nombre": "QASHQAI"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 235787898,
+    "Nombre": "370 Z"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 505315002,
+    "Nombre": "GT-R"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 617636671,
+    "Nombre": "VERSA"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 698189083,
+    "Nombre": "JUKE"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 860949765,
+    "Nombre": "NOTE"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 886008619,
+    "Nombre": "NV350"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 886008715,
+    "Nombre": "X-TRAIL"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 886008722,
+    "Nombre": "NEW QASHQAI"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 886008766,
+    "Nombre": "NP300"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 886008851,
+    "Nombre": "LEAF"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 886008855,
+    "Nombre": "MARCH"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 886008856,
+    "Nombre": "MARCH DRIVE"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 886008857,
+    "Nombre": "NEW SENTRA"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 886008860,
+    "Nombre": "KICKS"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 886008971,
+    "Nombre": "NP300 DIESEL"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 886009065,
+    "Nombre": "NEW VERSA"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 886009066,
+    "Nombre": "NEW NAVARA"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 886009067,
+    "Nombre": "NEW KICKS"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 886009068,
+    "Nombre": "NEW NAVARA"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 886009069,
+    "Nombre": "URVAN"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 886009070,
+    "Nombre": "URVAN"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 886009071,
+    "Nombre": "NEW"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 886009072,
+    "Nombre": "NEW PATHFINDER"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 886009073,
+    "Nombre": "NEW X-TRAIL"
+  },
+  {
+    "Marca": {
+      "Id": 102,
+      "Nombre": "Nissan"
+    },
+    "Id": 886009074,
+    "Nombre": "NEW X-TRAIL E-POWER"
+  }
+]

@@ -1,0 +1,231 @@
+﻿@using Credinissan.Affinity.Web.Data.DataObject;
+@{
+    ViewBag.Title = "Solicitud";
+    Cotizacion cotizacion = ViewBag.Cotizacion;
+
+    string icoSolicitud = "fa fa-eye w3-text-blue";
+
+    switch (cotizacion.Solicitud.EstadoSolicitud)
+    {
+        case Enums.EstadoSolicitud.Rechazada: icoSolicitud = "fa fa-ban w3-text-red"; break;
+        case Enums.EstadoSolicitud.AprobadaConCondiciones: icoSolicitud = "fa fa-check-square-o w3-text-green"; break;
+
+    }
+
+
+
+}
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+    .fila {
+        height: 28px;
+        font-size: 18px;
+    }
+
+    span.etiqueta {
+        /* color: #333;*/
+        font-weight: 500;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+    .
+    element.style {
+        width: 25%;
+    }
+
+    .progress-bar {
+        background-color: #C11718;
+
+    }
+</style>
+
+<div id="mensajes">
+
+    @if (ViewBag.Error != null)
+    {
+
+        <div class="alert alert-danger"> <i class="glyphicon glyphicon-exclamation-sign"></i> @ViewBag.Error</div>
+    }
+    @if (ViewBag.Exito != null)
+    {
+        <div class="alert alert-success"><i class="glyphicon glyphicon-thumbs-up"></i>  @ViewBag.Exito</div>
+    }
+
+    @if (ViewBag.Info != null)
+    {
+
+        <div class="alert alert-info">
+            <i class="glyphicon glyphicon-info-sign"></i>@ViewBag.Info
+        </div>
+
+    }
+
+</div>
+
+
+
+<div class="w3-padding-32">
+    <h2><i id="icoSolicitud" class="@icoSolicitud"></i> Solicitud  <span id="status"> @cotizacion.Solicitud.EstadoSolicitud</span></h2>
+</div>
+<div class="w3-padding-24 row">
+    <div class="col-md-6">
+        <h5>Número cotización: @cotizacion.Id</h5>
+        <h5>Enviado el: @cotizacion.Solicitud.FechaEnvioSolicitud</h5>
+        <h5>Cliente: @cotizacion.Solicitud.Contratantes.First().Nombre  @cotizacion.Solicitud.Contratantes.First().ApPaterno  @cotizacion.Solicitud.Contratantes.First().ApMaterno </h5>
+        <h5>Rut: @cotizacion.Solicitud.Contratantes.First().Rut</h5>
+    </div>
+    <div class="col-md-6">
+
+        <div id="comentario">
+            @if (cotizacion.Solicitud.ComentarioEvaluacion != null)
+            {
+                <h4>Comentario evaluación</h4>
+                <span> @cotizacion.Solicitud.ComentarioEvaluacion</span>
+            }
+
+            @if (cotizacion.Solicitud.EstadoSolicitud == Enums.EstadoSolicitud.AprobadaConCondiciones)
+            {
+                <div class=" w3-padding-16">
+                    <button type="button" class="w3-button texto-red-nissan" style="background-color: white; border: 1px solid #C11718;" data-bs-dismiss="modalDocumentos">Ver documentos solicitados</button>
+                </div>
+            }
+
+            @if (cotizacion.Solicitud.EstadoSolicitud == Enums.EstadoSolicitud.Rechazada)
+            {
+                <div class=" w3-padding-16"><button type="button" class="w3-button texto-red-nissan" style="background-color: white; border: 1px solid #C11718;">Apelar solicitud</button></div>
+            }
+
+        </div>
+
+
+    </div>
+
+</div>
+<div class="w3-padding-64">
+    <div class="progress">
+        <div class="progress-bar red-nissan" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+    </div>
+</div>
+
+<div class="w3-padding-64 ">
+
+    <div class="col-md-6">
+
+        <input type="checkbox" id="refresh" value="refresh" checked>
+        <label for="refresh"> Actualizar esta vista automáticamente</label><br>
+        <input type="checkbox" name="notificar" value="evaluacion" checked>
+        <label for="notificar"> Notificar a mi Email cuando se complete la evaluación</label><br>
+
+    </div>
+
+
+</div>
+
+
+
+<!-- The Modal -->
+<div class="modal" id="modalDocumentos">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Documentos solicitados</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+                <!-- Modal body -->
+                <div class="modal-body w3-padding-32">
+
+                    <div id="documentos" class="w3-padding-24" style="padding-left:20px;">
+
+                    </div>
+
+                    <input id="idCotizacion" type="hidden" name="idCotizacion" value="@cotizacion.Id" />
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <a href="/Solicitud/AdjuntarDocumentos/@cotizacion.Id" class="w3-button red-nissan">Adjuntar documentación</a>
+                    <button type="button" class="w3-button texto-red-nissan" style="background-color: white; border: 1px solid #C11718;" data-bs-dismiss="modal">Cancelar</button>
+
+
+                </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="~/Scripts/jquery-3.6.4.min.js"></script>
+
+<script>
+
+    $(document).ready(function () {
+
+        ActualizarStatus();
+    });
+
+    function TransforStatus(enumValue)
+    {
+
+        const result = enumValue.replace(/([A-Z])/g, " $1");
+        return result.charAt(0).toUpperCase() + result.slice(1);
+     }
+
+    function ActualizarStatus() {
+
+            $.get("@Url.Action("RefreshStatus")", { idCotizacion:  @cotizacion.Id} ,
+                function (data, status) {
+                    if (status == 'success')
+                    {
+                        icoSolicitud = "fa fa-eye w3-text-blue";
+                        $("#status").html(TransforStatus(data.EstadoSolicitud));
+                        $("#icoSolicitud").removeClass();
+                        if (data.Comentario != null)
+                        $("#comentario").html('<h4>Comentario evaluación</h4><span>' + data.Comentario + '</span>');
+
+
+                        switch (data.EstadoSolicitud) {
+
+                            case 'Rechazada': icoSolicitud = "fa fa-ban w3-text-red";
+                                $("#comentario").html($("#comentario").html() + '<div class=" w3-padding-16"><button type="button" class="w3-button texto-red-nissan" style="background-color: white; border: 1px solid #C11718;">Apelar solicitud</button></div>');
+                                break;
+
+                            case 'AprobadaConCondiciones': icoSolicitud = "fa fa-check-square-o w3-text-green";
+                                $("#comentario").html($("#comentario").html() + '<div class=" w3-padding-16"><button type="button" class="w3-button texto-red-nissan" style="background-color: white; border: 1px solid #C11718;" data-bs-toggle="modal" data-bs-target="#modalDocumentos">Ver documentos solicitados</button></div>');
+
+                                $("#documentos").html('<ul>');
+
+                                $.each(JSON.parse(data.Documentos), function (key, val) {
+                                    $("#documentos").html($("#documentos").html() + '<li>' + val.Description + '</li>');
+                                });
+
+                                $("#documentos").html($("#documentos").html() + '</ul>');
+                                break;
+                        }
+
+                        $("#icoSolicitud").addClass(icoSolicitud);
+
+                    }
+                });
+
+    }
+
+    var x = setInterval(function () {
+
+        if ($("#refresh").val() == false)
+                    return;
+
+            ActualizarStatus();
+
+            }, 10000);
+
+
+</script>

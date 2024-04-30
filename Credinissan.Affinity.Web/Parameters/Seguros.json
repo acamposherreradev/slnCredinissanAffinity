@@ -1,0 +1,36 @@
+[
+  {
+    "Id": 1,
+    "Name": "desgravamen-menor",
+    "Description": "Desgravamen",
+    "TipoFormula": "mafxtasa",
+    "valor": "0,023"
+
+  },
+  {
+    "Id": 2,
+    "Name": "desgravamen-mayor",
+    "Description": "Desgravamen",
+    "TipoFormula": "mafxtasa",
+    "valor": "0,029"
+
+  },
+  {
+    "Id": 3,
+    "Name": "cesantia",
+    "Description": "Credito Seguro",
+    "TipoFormula": "valUFPlazo",
+    "valor": "0,9"
+
+  },
+  {
+    "Id": 4,
+    "Name": "renta-hospitalaria",
+    "Description": "Renta Hospitalaria",
+    "TipoFormula": "valUFPlazo",
+    "valor": "0,45"
+
+  }
+
+
+]

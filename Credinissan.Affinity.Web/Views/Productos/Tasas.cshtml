@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Credinissan.Affinity.Web.Models.Tasa>
+@using Credinissan.Affinity.Web.Models;
+
+@{
+    ViewBag.Title = "Tasas";
+    Producto producto = ViewBag.Producto;
+}
+
+<h2>Tasas</h2>
+
+<p>
+    @Html.ActionLink(producto.Name, "Index")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UFMin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UFMax)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PlazoMin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PlazoMax)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TasaPagare)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.UFMin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UFMax)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PlazoMin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PlazoMax)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TasaPagare)
+        </td>
+        <td>
+            @Html.ActionLink("Ajustar", "EditTasa", new { idTasa=item.Id, idProducto = producto.Id }) 
+        </td>
+    </tr>
+}
+
+</table>

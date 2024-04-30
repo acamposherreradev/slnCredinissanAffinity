@@ -1,0 +1,258 @@
+﻿@using Credinissan.Affinity.Web.Models;
+@using Credinissan.Affinity.Web.Data.DataObject;
+@{
+    ViewBag.Title = "Cotización";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    List<Producto> Productos = ViewBag.Productos;
+    List<Modelo> modelos = ViewBag.Modelos;
+}
+
+@if (ViewBag.Error != null)
+{
+
+    <div class="alert alert-danger"> <i class="glyphicon glyphicon-exclamation-sign"></i> @ViewBag.Error</div>
+}
+@if (ViewBag.Exito != null)
+{
+    <div class="alert alert-success"><i class="glyphicon glyphicon-thumbs-up"></i>  @ViewBag.Exito</div>
+}
+
+@if (ViewBag.Info != null)
+{
+
+    <div class="alert alert-info">
+        <i class="glyphicon glyphicon-info-sign"></i> @ViewBag.Info
+    </div>
+
+}
+
+<div class="w3-padding-16">
+    <h1>Cotización</h1>
+</div>
+
+
+
+<form action="/Cotizacion/Calculate" method="post" target="_self">
+
+    <div class="w3-padding-32">
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="w3-section">
+                    <label>Año</label>
+                    <input class="form-control" type="number" name="year" value="2023" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="w3-section">
+                    <label>Modelo</label>
+                    <select id="modelo" required name="modelo" class="form-control">
+                        <option selected value=""0">Elige un modelo</option>
+                        @foreach (Modelo modelo in modelos)
+                        {
+                            <option value="@modelo.Id">@modelo.Nombre</option>
+
+                        }
+
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="w3-section">
+                    <label>Versión</label>
+                    <div id="waitForVersion"></div>
+                    <select id="version" required name="idVersion" class="form-control">
+                       
+
+                    </select>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="w3-section">
+                    <div class="w3-section">
+                        <label>Valor</label>
+                        <input class="form-control" type="number" min="500000" max="100000000" id="valor" name="valorVehiculo" value="0" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="w3-section">
+                    <div class="w3-section">
+                        <label>Pie</label>
+                        <input class="form-control" type="number" id="pie" name="pie" value="0" required>
+                        <input type="hidden" id="retoma" name="retoma" value="0" required>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="w3-section">
+                    <label>Monto del crédito</label>
+                    <input class="form-control" type="number" id="monto"  value="0" readonly>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <div class="w3-section">
+                    <label>Producto</label>
+                    <select name="idProducto" id="producto" class="form-control">
+                        @foreach (Producto pro in ViewBag.Productos)
+                        {
+                            <option value="@pro.Id">@pro.Name</option>
+
+                        }
+
+                    </select>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+
+                <div class="w3-section">
+                    <label>Plazo</label>
+                    <div id="waitForPlazo"></div>
+                    <select name="plazo" id="plazo" class="form-control">
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="w3-section">
+                    <label>Vencimiento</label>
+                    <input class="form-control" type="date" name="vencimiento" value="@DateTime.Today.AddMonths(1).ToString("yyyyy-MM-dd")" />
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="w3-padding-64">
+        <button type="submit" class="w3-button w3-block w3-padding-large red-nissan w3-margin-bottom">Calcular</button>
+    </div>
+</form>
+
+
+<script src="~/Scripts/jquery-3.6.4.min.js"></script>
+
+<script>
+
+    $("#valor").change(function () {
+
+
+        $("#monto").val($("#valor").val() - $("#pie").val());
+
+    });
+
+    $("#pie").change(function () {
+
+
+        $("#monto").val($("#valor").val() - $("#pie").val());
+
+    });
+
+    function GetPlazos() {
+
+         $('#plazo').empty();
+
+         datos = {
+            idProducto: $("#producto").val(),
+        };
+
+        $("#waitForPlazo").html('<img src="/Img/espere.gif" width="70" />');
+
+        jQuery.ajax({
+            type: "POST",
+            url: "@Url.Action("GetPlazos")",
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(datos),
+            success: function (data) {
+
+                data.data.forEach(element =>
+
+                    $('#plazo').append("<option value='" + element.Id + "' >" + element.Id + "</option>")
+                );
+
+                $("#waitForPlazo").html('');
+
+            },
+
+            failure: function (errMsg) {
+                alert(errMsg);
+
+            }
+
+        });
+
+    }
+
+
+    function GetVersiones() {
+
+         $('#version').empty();
+
+         datos = {
+            idModelo: $("#modelo").val(),
+        };
+
+        $("#waitForVersion").html('<img src="/Img/espere.gif" width="70" />');
+
+        jQuery.ajax({
+            type: "POST",
+            url: "@Url.Action("GetVersiones")",
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(datos),
+            success: function (data) {
+
+                data.data.forEach(element =>
+
+                    $('#version').append("<option value='" + element.Id + "' >" + element.Nombre + "</option>")
+                );
+
+                $("#waitForVersion").html('');
+
+            },
+
+            failure: function (errMsg) {
+                alert(errMsg);
+
+            }
+
+        });
+
+    }
+
+    $("#producto").change(function () {
+
+        GetPlazos();
+
+    });
+
+
+    $("#modelo").change(function () {
+
+        GetVersiones();
+
+    });
+
+
+    $(document).ready(function () {
+
+        GetPlazos();
+
+    });
+
+
+</script>
+

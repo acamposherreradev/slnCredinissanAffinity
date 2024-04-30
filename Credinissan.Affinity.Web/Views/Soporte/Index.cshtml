@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+@{
+    ViewBag.Title = "Productos";
+}
+
+@if (ViewBag.Error != null)
+{
+
+    <div class="alert alert-danger"> <i class="glyphicon glyphicon-exclamation-sign"></i> @ViewBag.Error</div>
+}
+@if (ViewBag.Exito != null)
+{
+    <div class="alert alert-success"><i class="glyphicon glyphicon-thumbs-up"></i>  @ViewBag.Exito</div>
+}
+
+@if (ViewBag.Info != null)
+{
+
+    <div class="alert alert-info">
+        <i class="glyphicon glyphicon-info-sign"></i> @ViewBag.Info
+    </div>
+
+}
+
+
+<h2>Index</h2>
+
+@Html.ActionLink("Respaldar modelos y versiones", "RespaldarModelosVersiones")
+<br />
+
+@Html.ActionLink("Crear Base de Datos", "CrearBD")

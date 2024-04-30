@@ -1,0 +1,45 @@
+﻿@using Credinissan.Affinity.Web.Models;
+
+@{
+    ViewBag.Title = "Perfil";
+
+    List<PermisosUsuario> permisosUsuario = ViewBag.PermisosUsuario;
+}
+
+<div class="w3-padding-32">
+    <h2>Perfil Usuario</h2>
+</div>
+
+<div class="w3-padding-32">
+    <div>Usuario: @User.Identity.Name</div>
+    @if (permisosUsuario != null)
+    {
+        if (permisosUsuario.Count > 0)
+        {
+            <div>Nombre: @permisosUsuario.First().Usuario.Nombre</div>
+
+            if (permisosUsuario.First().Usuario.Sucursal != null)
+            {
+                <div>Sucursal: @permisosUsuario.First().Usuario.Sucursal.Distribuidor.Nombre.ToUpper() >   @permisosUsuario.First().Usuario.Sucursal.Nombre.ToUpper()</div>
+
+            }
+
+        }
+    }
+    <div>IsAuthenticated: @User.Identity.IsAuthenticated</div>
+    <div>AuthenticationType: @User.Identity.AuthenticationType</div>
+
+    @foreach (PermisosUsuario permisos in permisosUsuario)
+    {
+        <div>IsInRole @permisos.Rol.Descripcion: @permisos.Asignado</div>
+    }
+
+</div>
+
+
+
+<div class="w3-padding-32">
+
+  @Html.ActionLink("Cerrar sesión", "LogOff", null, new { @class = "btn  btn-default btn-danger red-nissan" })
+
+</div>

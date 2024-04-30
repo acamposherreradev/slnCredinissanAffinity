@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<style>
+    .imagen-fondo-home {
+        background-image: url("/Img/Leaft.jpg");
+        background-size: cover;
+        min-height: 820px;
+        color: #FFFFFF;
+        padding: 20px 90px;
+    }
+    .texto-principal {
+        position:relative;
+        bottom:-480px;
+
+    }
+</style>
+
+@if (ViewBag.Error != null)
+{
+
+    <div class="alert alert-danger"> <i class="glyphicon glyphicon-exclamation-sign"></i> @ViewBag.Error</div>
+}
+@if (ViewBag.Exito != null)
+{
+    <div class="alert alert-success"><i class="glyphicon glyphicon-thumbs-up"></i>  @ViewBag.Exito</div>
+}
+
+@if (ViewBag.Info != null)
+{
+
+    <div class="alert alert-info">
+        <i class="glyphicon glyphicon-info-sign"></i> @ViewBag.Info
+    </div>
+
+}
+
+
+<div class="container imagen-fondo-home">
+
+
+
+    <div class="jumbotron texto-principal">
+        <h1>NEO AFFINITY</h1>
+        <p class="lead">Una plataforma moderna para negocios más ágiles</p>
+        <p><a href="/Cotizacion" class="btn btn-danger btn-lg red-nissan">Cotizar &raquo;</a></p>
+    </div>
+
+    
+
+</div>

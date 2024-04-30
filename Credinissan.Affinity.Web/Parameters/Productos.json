@@ -1,0 +1,240 @@
+[
+  {
+    "Id": 1,
+    "Name": "Credinissan Plus Classic",
+    "Active": true,
+    "AllUsers": true,
+    "AllVersion": true,
+    "TipoCredito": 1,
+    "Plazos": [
+      {
+        "Id": 12,
+        "Vfmg": 50
+      },
+      {
+        "Id": 18,
+        "Vfmg": 50
+      },
+      {
+        "Id": 24,
+        "Vfmg": 50
+      },
+      {
+        "Id": 36,
+        "Vfmg": 40
+      },
+      {
+        "Id": 42,
+        "Vfmg": 40
+      },
+      {
+        "Id": 48,
+        "Vfmg": 30
+      }
+    ],
+    "Tasas": [
+      {
+        "Id": 1,
+        "UFMin": 0,
+        "UFMax": 200,
+        "PlazoMin": 6,
+        "PlazoMax": 36,
+        "TasaPagare": 0.0194,
+        "TasaPiso": 0.0190
+      },
+      {
+        "Id": 2,
+        "UFMin": 200,
+        "UFMax": 5000,
+        "PlazoMin": 6,
+        "PlazoMax": 36,
+        "TasaPagare": 0.0194,
+        "TasaPiso": 0.0190
+      },
+      {
+        "Id": 3,
+        "UFMin": 0,
+        "UFMax": 200,
+        "PlazoMin": 7,
+        "PlazoMax": 72,
+        "TasaPagare": 0.0194,
+        "TasaPiso": 0.0190
+      },
+      {
+        "Id": 4,
+        "UFMin": 200,
+        "UFMax": 5000,
+        "PlazoMin": 7,
+        "PlazoMax": 72,
+        "TasaPagare": 0.0194,
+        "TasaPiso": 0.0190
+      }
+    ],
+    "Versions": [
+      {
+        "Id": 101,
+        "Nombre": "Sense MT",
+        "Modelo": {
+          "Id": 1,
+          "Nombre": "Versa",
+          "Marca": null
+        }
+      },
+      {
+        "Id": 102,
+        "Nombre": "Advance MT",
+        "Modelo": {
+          "Id": 1,
+          "Nombre": "Versa",
+          "Marca": null
+        }
+      },
+      {
+        "Id": 103,
+        "Nombre": "Advance CVT",
+        "Modelo": {
+          "Id": 1,
+          "Nombre": "Versa",
+          "Marca": null
+        }
+      },
+      {
+        "Id": 104,
+        "Nombre": "Exclusive CVT",
+        "Modelo": {
+          "Id": 1,
+          "Nombre": "Versa",
+          "Marca": null
+        }
+      }
+    ],
+    "Users": [
+      {
+        "Id": 1,
+        "Nombre": null,
+        "Rut": null,
+        "Sucursal": null,
+        "Username": "EC2AMAZ-7MTC17K\rcerda",
+        "Email": null,
+        "Clave": null,
+        "Preferencias": null,
+        "Estado": 0,
+        "CantidadIntentos": 0,
+        "Foto": null,
+        "Token": null,
+        "AprobarTerminosCondiciones": false
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "Name": "Convencional Classic",
+    "Active": true,
+    "AllUsers": true,
+    "AllVersion": true,
+    "TipoCredito": 2,
+    "Plazos": [
+      {
+        "Id": 6,
+        "Vfmg": 0
+      },
+      {
+        "Id": 60,
+        "Vfmg": 0
+      }
+    ],
+    "Tasas": [
+      {
+        "Id": 1,
+        "UFMin": 0,
+        "UFMax": 200,
+        "PlazoMin": 6,
+        "PlazoMax": 36,
+        "TasaPagare": 0.0271,
+        "TasaPiso": 0.0267
+      },
+      {
+        "Id": 2,
+        "UFMin": 200,
+        "UFMax": 5000,
+        "PlazoMin": 6,
+        "PlazoMax": 36,
+        "TasaPagare": 0.0271,
+        "TasaPiso": 0.0267
+      },
+      {
+        "Id": 3,
+        "UFMin": 0,
+        "UFMax": 200,
+        "PlazoMin": 37,
+        "PlazoMax": 72,
+        "TasaPagare": 0.0271,
+        "TasaPiso": 0.0267
+      },
+      {
+        "Id": 4,
+        "UFMin": 200,
+        "UFMax": 5000,
+        "PlazoMin": 37,
+        "PlazoMax": 72,
+        "TasaPagare": 0.0271,
+        "TasaPiso": 0.0267
+      }
+    ],
+    "Versions": [
+      {
+        "Id": 101,
+        "Nombre": "Sense MT",
+        "Modelo": {
+          "Id": 1,
+          "Nombre": "Versa",
+          "Marca": null
+        }
+      },
+      {
+        "Id": 102,
+        "Nombre": "Advance MT",
+        "Modelo": {
+          "Id": 1,
+          "Nombre": "Versa",
+          "Marca": null
+        }
+      },
+      {
+        "Id": 103,
+        "Nombre": "Advance CVT",
+        "Modelo": {
+          "Id": 1,
+          "Nombre": "Versa",
+          "Marca": null
+        }
+      },
+      {
+        "Id": 104,
+        "Nombre": "Exclusive CVT",
+        "Modelo": {
+          "Id": 1,
+          "Nombre": "Versa",
+          "Marca": null
+        }
+      }
+    ],
+    "Users": [
+      {
+        "Id": 1,
+        "Nombre": null,
+        "Rut": null,
+        "Sucursal": null,
+        "Username": "EC2AMAZ-7MTC17K\rcerda",
+        "Email": null,
+        "Clave": null,
+        "Preferencias": null,
+        "Estado": 0,
+        "CantidadIntentos": 0,
+        "Foto": null,
+        "Token": null,
+        "AprobarTerminosCondiciones": false
+      }
+    ]
+  }
+]
