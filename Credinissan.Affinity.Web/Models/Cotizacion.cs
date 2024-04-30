@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 
 /// <summary>
-/// Credinissan.Affinity.Web.Models ROD
+/// Credinissan.Affinity.Web.Models ROD acampos
 /// </summary>
 namespace Credinissan.Affinity.Web.Models
 {
