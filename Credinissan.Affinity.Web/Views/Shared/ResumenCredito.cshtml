@@ -1,0 +1,63 @@
+﻿@model Credinissan.Affinity.Web.Data.DataObject.Cotizacion
+@using Credinissan.Affinity.Web.Data.DataObject;
+
+@{
+
+
+    Cotizacion cotizacion = Model;
+
+}
+<style>
+
+    .fila {height:26px;
+    }
+    div span.etiqueta {
+        color: #333;
+        font-weight:500;
+        font-size:15px;
+    }
+
+</style>
+
+<div class="w3-padding-32">
+
+    <table class="table">
+        <tr >
+            <td>
+
+                <div class="fila"><span class="etiqueta">Valor Vehículo</span>: @cotizacion.ValorVehiculo.ToString("$#,0")</div>
+                <div class="fila"><span class="etiqueta">Pie</span>: @cotizacion.Pie.ToString("$#,0")</div>
+                <div class="fila"><span class="etiqueta">Retoma</span>: @cotizacion.Retoma.ToString("$#,0")</div>
+                <div class="fila"><span class="etiqueta">Saldo</span>: @cotizacion.SaldoPrecio.ToString("$#,0")</div>
+                @if (cotizacion.Tipo == Enums.TipoCredito.Convencional)
+                {
+                    <div class="fila"><span class="etiqueta">Plazo</span>: @cotizacion.Plazo meses </div>
+                }
+                else
+                {
+                    int plazo = cotizacion.Plazo - 1;
+                    <div class="fila"><span class="etiqueta">Plazo</span>: @plazo meses + opción de compra </div>
+                }
+                <div class="fila"><span class="etiqueta">Tasa</span>: @cotizacion.Tasa.ToString("0.00%")</div>
+                <div class="fila"><span class="etiqueta">Gasto Operacional</span>: @cotizacion.MontoGastoOperacional.ToString("$#,0")</div>
+
+            </td>
+            <td>
+                <div class="fila"><span class="etiqueta">Desfase</span>: @cotizacion.MontoDesfase.ToString("$#,0") ( @cotizacion.DiasDesfase días ) </div>
+                <div class="fila"><span class="etiqueta">ITE</span>: @cotizacion.ITE.ToString("$#,0")</div>
+                <div class="fila"><span class="etiqueta">MAF</span>: @cotizacion.MAF.ToString("$#,0")</div>
+                <div class="fila"><span class="etiqueta">CAF</span>: @cotizacion.CAF.ToString("$#,0")</div>
+                @if (cotizacion.TablaDesarrollo != null)
+                {
+                    <div class="fila"><span class="etiqueta">Cuota</span>: @cotizacion.MontoCuota.ToString("$#,0")</div>
+                }
+                <div class="fila"><span class="etiqueta">VFMG</span>: @cotizacion.VFMG.ToString("$#,0")</div>
+            </td>
+
+        </tr>
+
+    </table>
+
+
+
+</div>

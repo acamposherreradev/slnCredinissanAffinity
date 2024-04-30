@@ -1,0 +1,59 @@
+[
+  {
+    "Id": 1,
+    "Name": "ite-menor-12-meses",
+    "Description": "Impuesto menor a un año",
+    "Value": 0.00066,
+    "DailyValue": []
+
+  },
+  {
+    "Id": 2,
+    "Name": "ite-mayor-12-meses",
+    "Description": "Impuesto mayor o igual a un año",
+    "Value": 0.008,
+    "DailyValue": []
+
+  },
+  {
+    "Id": 3,
+    "Name": "uf",
+    "Description": "Unidad de fomento",
+    "Value": 0,
+    "DailyValue": [
+
+      {
+        "Day": "2024-04-30",
+        "Value": 37261.98
+      },
+
+      {
+        "Day": "2023-04-28",
+        "Value": 34630.36
+      },
+
+      {
+        "Day": "2023-04-29",
+        "Value": 34630.36
+      },
+
+      {
+        "Day": "2023-04-30",
+        "Value": 34630.36
+      },
+
+      {
+        "Day": "2023-05-01",
+        "Value": 34630.36
+      },
+
+      {
+        "Day": "2023-05-02",
+        "Value": 34630.36
+      }
+
+    ]
+
+  }
+
+]

@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - NEO AFFINITY</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/w3.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('/w3images/parallax1.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+        .red-nissan {
+            background-color: #C11718;
+            border: 1px solid #C11718;
+            color: #FFFFFF;
+        }
+
+        .texto-red-nissan {
+            color: #C11718;
+        }
+        .fa {
+            color: #C11718;
+        }
+       /* a.w3-bar.w3-bar-item.w3-button {
+            background-color:#ff0000;
+        }*/
+
+
+
+/* Turn off parallax scrolling for tablets and phones */
+
+
+    </style>
+
+ 
+</head>
+
+<body>
+
+  
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar" style="padding:5px 25px; background-color:#FFF;">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <a href="/Home" class="w3-bar-item w3-button"><i class="fa fa-home "></i> HOME</a>
+            <a href="/Cotizacion" class="w3-bar-item w3-button"><i class="fa fa-money"></i> COTIZACIÓN</a>
+            <a href="/Evaluacion" class="w3-bar-item w3-button"><i class="fa fa-eye"></i> EVALUACION</a>
+            <a href="/Productos" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PRODUCTOS</a>
+            <a href="/Soporte" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> SOPORTE</a>
+            <a href="/Home/Perfil" class="w3-bar-item w3-button w3-right w3-hide-small"><i class="fa fa-user"></i> </a>
+
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="/Cotizacion" class="w3-bar-item w3-button" onclick="toggleFunction()">COTIZACIÓN</a>
+            <a href="/Home/Perfil" class="w3-bar-item w3-button" onclick="toggleFunction()">PERFIL</a>
+            <a href="#" class="w3-bar-item w3-button">BUSCAR</a>
+        </div>
+    </div>
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main container">
+
+        @RenderBody()
+
+
+    </div>
+
+    <!-- W3.CSS Container -->
+    <div class="w3-light-grey w3-container w3-padding-64 text-center"><p> &copy; @DateTime.Today.Year  - <span class=""> NISSAN TANNER FINANCIAL SERVICES</span></p></div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+    </script>
+
+</body>
+
+
+</html>

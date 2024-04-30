@@ -1,0 +1,46 @@
+[
+  {
+    "Id": 1,
+    "Name": "rut",
+    "Description": "Documentos para validar RUT",
+    "Checked": "checked"
+
+  },
+  {
+    "Id": 2,
+    "Name": "direccion",
+    "Description": "Documentos para validar direccion"
+
+  },
+  {
+    "Id": 3,
+    "Name": "renta",
+    "Description": "Documentos para validar renta"
+
+  },
+  {
+    "Id": 4,
+    "Name": "liquidacion",
+    "Description": "Liquidaciones de sueldo / Pension"
+
+  },
+  {
+    "Id": 5,
+    "Name": "garantia",
+    "Description": "Documento de garantia"
+
+  },
+  {
+    "Id": 6,
+    "Name": "cav",
+    "Description": "Documento CAV"
+
+  },
+  {
+    "Id": 7,
+    "Name": "previred",
+    "Description": "Documento cotizaciones PREVIRED"
+
+  }
+
+]

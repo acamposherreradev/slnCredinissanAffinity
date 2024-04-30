@@ -1,0 +1,507 @@
+﻿@using Credinissan.Affinity.Web.Data.DataObject;
+@{
+    ViewBag.Title = "Solicitud";
+    Credinissan.Affinity.Web.Models.Cotizacion cotizacion = Model;
+
+}
+<div id="mensajes">
+
+    @if (ViewBag.Error != null)
+    {
+
+        <div class="alert alert-danger"> <i class="glyphicon glyphicon-exclamation-sign"></i> @ViewBag.Error</div>
+    }
+    @if (ViewBag.Exito != null)
+    {
+        <div class="alert alert-success"><i class="glyphicon glyphicon-thumbs-up"></i>  @ViewBag.Exito</div>
+    }
+
+    @if (ViewBag.Info != null)
+    {
+
+        <div class="alert alert-info">
+            <i class="glyphicon glyphicon-info-sign"></i>@ViewBag.Info
+        </div>
+
+    }
+
+</div>
+<style>
+    .lbl-rut-invalido {
+        color: red;
+        width: 120px;
+        position: relative;
+        padding-left: 20px;
+    }
+</style>
+
+<style>
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+    }
+
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+
+    .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+    }
+</style>
+
+<div class="w3-padding-16">
+    <h1>Solicitud</h1>
+</div>
+
+@for (int i = 0; i <= 4; i++)
+{
+    Enums.TipoContratante tipoContratante = i == 0 ? Enums.TipoContratante.Titular : Enums.TipoContratante.Aval; ;
+
+    string claseAcordion = i == 0 ? "" : "w3-hide";
+
+
+    <button id="accordion_@i" class="accordion @claseAcordion" value="@i">
+        <h4> <i class="fa fa-user-circle-o"></i> @tipoContratante  <span style="width:300px;" id="accordion_title_@i"></span></h4>
+    </button>
+    <div class="panel" id="panel_@i">
+        <form id="form_@i" method="dialog">
+
+            <div class="w3-padding-32">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>RUT</label><label id="lbl_rut_titular_@i" for="rut_@i" class="lbl-rut-invalido w3-hide">Rut inválido</label>
+                            <input class="form-control rut" id="rut_@i" type="text" placeholder="12345678-K" value="" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>ApPaterno</label>
+                            <input class="form-control" id="apPaterno_@i" type="text" value="" aria-invalid="true" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>ApMaterno</label>
+                            <input class="form-control" id="apMaterno_@i" type="text" value="" required>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Nombres</label>
+                            <input class="form-control" id="nombre_@i" type="text" value="" required>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Fecha Nacimiento</label>
+                            <input class="form-control" type="date" required id="fechaNacimiento_@i" value="" />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Nacionalidad</label>
+                            <select class="form-control" id="nacionalidad_@i">
+                                <option selected value="56">CHILENO(A)</option>
+                                <option value="0">EXTRANJERO(A)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col-md-4">
+
+                        <div class="w3-section">
+                            <label>Estado Civil</label>
+                            <select id="estadoCivil_@i" class="form-control">
+                                <option value="0">Soltero</option>
+                                <option value="1">Casado</option>
+                                <option value="2">Divorciado</option>
+                                <option value="3">Viudo </option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Dirección</label>
+                            <input class="form-control" type="text" required id="direccion_@i" value="" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Comuna</label>
+                            <div class="autocomplete">
+                                <input class="form-control" id="comuna_@i" type="text" required name="comuna" placeholder="Comuna">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Email</label>
+                            <input class="form-control" required type="email" id="email_@i" value="" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Teléfono</label>
+                            <input class="form-control" type="tel" required id="telefono_@i" value="" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Actividad/cargo</label>
+                            <input class="form-control" type="text" id="actividad_@i" required value="" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+
+
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Tipo Trabajador</label>
+                            <select id="tipoTrabajador_@i" class="form-control">
+                                <option value="1">Dependiente</option>
+                                <option value="2">Independiente</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Renta/Ingreso mensual</label>
+                            <input class="form-control" type="number" id="renta_@i" required value="" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Antigüedad laboral (ingreso)</label>
+                            <input class="form-control" type="date" id="fechaInicioActividad_@i" required value="" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>RUT Empleador <label id="lbl_rut_empleador_@i" for="rutEmpleador_@i" class="lbl-rut-invalido w3-hide">Rut inválido</label></label>
+                            <input class="form-control rut" id="rutEmpleador_@i" type="text" placeholder="12345678-K" value="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Nombre empleador</label>
+                            <input class="form-control" id="nombreEmpleador_@i" type="text" value="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="w3-section" style="padding-top:25px;">
+                            <input id="idCotizacion" type="hidden" name="idCotizacion" value="@ViewBag.IdCotizacion" />
+                            <button type="submit" id="saveTitular" value="@i" class="save-contratante w3-button red-nissan">Guardar</button>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </form>
+    </div>
+}
+
+<input id="idCotizacion" type="hidden" name="idCotizacion" value="@ViewBag.IdCotizacion" />
+<button class="w3-center w3-hide" id="btnAddAval" value="0" style="border:solid 0.5px #808080; background-color:#F3F3F3; padding:30px 120px; margin-top:30px;"><h4><i class="fa fa-user-plus"></i> Agregar aval</h4></button>
+<div class="w3-padding-64">
+    <div class="w3-padding-64">
+        <button type="submit" class="w3-button w3-block w3-padding-large red-nissan w3-margin-bottom">Enviar</button>
+    </div>
+</div>
+
+
+
+<script src="~/Scripts/jquery-3.6.4.min.js"></script>
+
+<script>
+
+    $(document).ready(function () {
+
+         $.post("@Url.Action("GetComunas")",null,
+            function (data, status) {
+                if (status == 'success') {
+                    autocomplete(document.getElementById("comuna_0"), data);
+                }
+             });
+
+    });
+
+
+
+
+    $(".save-contratante").click(function () {
+
+
+        var item = $(this).val();
+
+        if (!$("#form_" + item)[0].checkValidity()) {
+
+            $("#mensajes").html('<div class="alert alert-danger"> <i class="glyphicon glyphicon-exclamation-sign"></i>revisa el formulario</div>');
+            return;
+        }
+
+
+        datos = {
+            idCotizacion: parseInt($("#idCotizacion").val()),
+            rut: $("#rut_" + item).val(),
+            apPaterno: $("#apPaterno_" + item).val(),
+            apMaterno: $("#apMaterno_" + item).val(),
+            nombre: $("#nombre_" + item).val(),
+            fechaNacimiento: $("#fechaNacimiento_" + item).val(),
+            nacionalidad: $("#nacionalidad_" + item).val(),
+            estadoCivil: $("#estadoCivil_" + item).val(),
+            direccion: $("#direccion_" + item).val(),
+            comuna: $("#comuna_" + item).val(),
+            email: $("#email_" + item).val(),
+            telefono: $("#telefono_" + item).val(),
+            actividad: $("#actividad_" + item).val(),
+            tipoTrabajador: $("#tipoTrabajador_" + item).val(),
+            renta: $("#renta_" + item).val(),
+            fechaInicioActividad: $("#fechaInicioActividad_" + item).val(),
+            rutEmpleador: $("#rutEmpleador_" + item).val(),
+            nombreEmpleador: $("#nombreEmpleador_" + item).val(),
+            tipoContratante: item == 0 ? 1 : 2,
+        };
+
+        $.post("@Url.Action("SaveContratante")",datos,
+            function (data, status) {
+                if (status == 'success') {
+
+
+                    var panel = document.getElementById("panel_" + item);
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                    $("#accordion_title_" + item).html(": " + data.nombre + " (" + data.rut + ")");
+
+                    $("#btnAddAval").val(parseInt(item) + 1);
+                    $("#btnAddAval").removeClass("w3-hide");
+
+                } else {
+                    $("#mensajes").html('<div class="alert alert-danger"> <i class="glyphicon glyphicon-exclamation-sign"></i>' + status + '</div>');
+                }
+            });
+
+
+
+
+    });
+
+    $("#btnAddAval").click(function () {
+
+        $("#accordion_" + $("#btnAddAval").val()).removeClass("w3-hide");
+        $("#btnAddAval").addClass("w3-hide");
+
+    });
+
+
+
+    $(".rut").change(function () {
+
+        if ($(this).val() == '')
+            return;
+
+        $(this).val($(this).val().replace('-', ''));
+
+        $(this).val($(this).val().substring(0, $(this).val().length - 1) + '-' + $(this).val().substring($(this).val().length - 1));
+
+        var labels = document.getElementsByTagName('LABEL');
+        for (var i = 0; i < labels.length; i++) {
+            if (labels[i].htmlFor == this.id) {
+
+                if (Fn.validaRut($(this).val())) {
+                    $("#" + labels[i].id).addClass('w3-hide')
+                }
+                else {
+                    $("#" + labels[i].id).removeClass('w3-hide')
+
+                }
+
+            }
+        }
+
+    });
+
+
+    var Fn = {
+        // Valida el rut con su cadena completa "XXXXXXXX-X"
+        validaRut: function (rutCompleto) {
+            if (!/^[0-9]+[-|‐]{1}[0-9kK]{1}$/.test(rutCompleto))
+                return false;
+            var tmp = rutCompleto.split('-');
+            var digv = tmp[1];
+            var rut = tmp[0];
+            if (digv == 'K') digv = 'k';
+            return (Fn.dv(rut) == digv);
+        },
+        dv: function (T) {
+            var M = 0, S = 1;
+            for (; T; T = Math.floor(T / 10))
+                S = (S + T % 10 * (9 - M++ % 6)) % 11;
+            return S ? S - 1 : 'k';
+        }
+    }
+
+
+
+</script>
+
+<script>
+    function autocomplete(inp, arr) {
+        /*the autocomplete function takes two arguments,
+        the text field element and an array of possible autocompleted values:*/
+        var currentFocus;
+        /*execute a function when someone writes in the text field:*/
+        inp.addEventListener("input", function (e) {
+            var a, b, i, val = this.value;
+            /*close any already open lists of autocompleted values*/
+            closeAllLists();
+            if (!val) { return false; }
+            currentFocus = -1;
+            /*create a DIV element that will contain the items (values):*/
+            a = document.createElement("DIV");
+            a.setAttribute("id", this.id + "autocomplete-list");
+            a.setAttribute("class", "autocomplete-items");
+            /*append the DIV element as a child of the autocomplete container:*/
+            this.parentNode.appendChild(a);
+            /*for each item in the array...*/
+            for (i = 0; i < arr.length; i++) {
+                /*check if the item starts with the same letters as the text field value:*/
+                if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                    /*create a DIV element for each matching element:*/
+                    b = document.createElement("DIV");
+                    /*make the matching letters bold:*/
+                    b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                    b.innerHTML += arr[i].substr(val.length);
+                    /*insert a input field that will hold the current array item's value:*/
+                    b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+                    /*execute a function when someone clicks on the item value (DIV element):*/
+                    b.addEventListener("click", function (e) {
+                        /*insert the value for the autocomplete text field:*/
+                        inp.value = this.getElementsByTagName("input")[0].value;
+                        /*close the list of autocompleted values,
+                        (or any other open lists of autocompleted values:*/
+                        closeAllLists();
+                    });
+                    a.appendChild(b);
+                }
+            }
+        });
+        /*execute a function presses a key on the keyboard:*/
+        inp.addEventListener("keydown", function (e) {
+            var x = document.getElementById(this.id + "autocomplete-list");
+            if (x) x = x.getElementsByTagName("div");
+            if (e.keyCode == 40) {
+                /*If the arrow DOWN key is pressed,
+                increase the currentFocus variable:*/
+                currentFocus++;
+                /*and and make the current item more visible:*/
+                addActive(x);
+            } else if (e.keyCode == 38) { //up
+                /*If the arrow UP key is pressed,
+                decrease the currentFocus variable:*/
+                currentFocus--;
+                /*and and make the current item more visible:*/
+                addActive(x);
+            } else if (e.keyCode == 13) {
+                /*If the ENTER key is pressed, prevent the form from being submitted,*/
+                e.preventDefault();
+                if (currentFocus > -1) {
+                    /*and simulate a click on the "active" item:*/
+                    if (x) x[currentFocus].click();
+                }
+            }
+        });
+        function addActive(x) {
+            /*a function to classify an item as "active":*/
+            if (!x) return false;
+            /*start by removing the "active" class on all items:*/
+            removeActive(x);
+            if (currentFocus >= x.length) currentFocus = 0;
+            if (currentFocus < 0) currentFocus = (x.length - 1);
+            /*add class "autocomplete-active":*/
+            x[currentFocus].classList.add("autocomplete-active");
+        }
+        function removeActive(x) {
+            /*a function to remove the "active" class from all autocomplete items:*/
+            for (var i = 0; i < x.length; i++) {
+                x[i].classList.remove("autocomplete-active");
+            }
+        }
+        function closeAllLists(elmnt) {
+            /*close all autocomplete lists in the document,
+            except the one passed as an argument:*/
+            var x = document.getElementsByClassName("autocomplete-items");
+            for (var i = 0; i < x.length; i++) {
+                if (elmnt != x[i] && elmnt != inp) {
+                    x[i].parentNode.removeChild(x[i]);
+                }
+            }
+        }
+        /*execute a function when someone clicks in the document:*/
+        document.addEventListener("click", function (e) {
+            closeAllLists(e.target);
+        });
+    }
+
+
+</script>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+

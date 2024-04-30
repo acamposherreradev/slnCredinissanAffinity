@@ -1,0 +1,94 @@
+[
+  {
+    "Id": 1,
+    "Name": "motivo1",
+    "Description": "Falta documentos"
+
+  },
+  {
+    "Id": 2,
+    "Name": "motivo2",
+    "Description": "Suficiente deuda con NTFS"
+
+  },
+  {
+    "Id": 3,
+    "Name": "motivo3",
+    "Description": "Sobreendeudamiento"
+
+  },
+  {
+    "Id": 4,
+    "Name": "motivo4",
+    "Description": "Sin patrimonio suficiente"
+
+  },
+  {
+    "Id": 5,
+    "Name": "motivo5",
+    "Description": "Sin capacidad para el monto exigido"
+
+  },
+  {
+    "Id": 6,
+    "Name": "motivo6",
+    "Description": "Patrimonio menor al exigido"
+
+  },
+  {
+    "Id": 7,
+    "Name": "motivo7",
+    "Description": "Mal comportamiento con NTFS, no prescrito"
+
+  },
+
+  {
+    "Id": 8,
+    "Name": "motivo8",
+    "Description": "Informacion insuficiente"
+
+  },
+  {
+    "Id": 9,
+    "Name": "motivo9",
+    "Description": "Fuera de proporcion prestamo"
+
+  },
+  {
+    "Id": 10,
+    "Name": "motivo10",
+    "Description": "Mal comportamiento anterior"
+
+  },
+  {
+    "Id": 11,
+    "Name": "motivo11",
+    "Description": "Sin actividad que genere ingresos"
+
+  },
+  {
+    "Id": 12,
+    "Name": "motivo12",
+    "Description": "Cuota sobrepasa capacidad del prestamo"
+
+  },
+  {
+    "Id": 13,
+    "Name": "motivo13",
+    "Description": "Extranjero sin arraigo"
+
+  },
+  {
+    "Id": 14,
+    "Name": "motivo14",
+    "Description": "Vehiculo no cumple politicas de riesgo"
+
+  },
+  {
+    "Id": 15,
+    "Name": "motivo15",
+    "Description": "No cumple antiguedad laboral"
+
+  }
+
+]

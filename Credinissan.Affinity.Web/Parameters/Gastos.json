@@ -1,0 +1,89 @@
+[
+  {
+    "Id": 1,
+    "Name": "nuevos",
+    "Description": "Financiamiento Nuevos",
+    "Items": [
+      {
+        "Id": 1,
+        "Descripcion": "Inscripción",
+        "Valor": 82230
+      },
+      {
+        "Id": 2,
+        "Descripcion": "Notaría",
+        "Valor": 2380
+      },
+      {
+        "Id": 3,
+        "Descripcion": "Prenda",
+        "Valor": 195006
+      }
+
+
+    ]
+
+  },
+  {
+    "Id": 2,
+    "Name": "refinanciamiento",
+    "Description": "Retención o refinanciemiento",
+    "Items": [
+
+      {
+        "Id": 2,
+        "Descripcion": "Notaría",
+        "Valor": 2380
+      }
+
+    ]
+
+  },
+
+
+
+  {
+    "Id": 3,
+    "Name": "portabilidad",
+    "Description": "Compra de cartera",
+    "Items": [
+      {
+        "Id": 2,
+        "Descripcion": "Notaría",
+        "Valor": 2380
+      },
+      {
+        "Id": 3,
+        "Descripcion": "Prenda",
+        "Valor": 195006
+      }
+
+    ]
+
+  },
+  {
+    "Id": 4,
+    "Name": "seminuevos",
+    "Description": "Financiamiento Usados",
+    "Items": [
+      {
+        "Id": 2,
+        "Descripcion": "Notaría",
+        "Valor": 2380
+      },
+      {
+        "Id": 3,
+        "Descripcion": "Prenda",
+        "Valor": 195006
+      },
+      {
+        "Id": 4,
+        "Descripcion": "Transferencia",
+        "Valor": 27540
+      }
+
+    ]
+
+  }
+
+]

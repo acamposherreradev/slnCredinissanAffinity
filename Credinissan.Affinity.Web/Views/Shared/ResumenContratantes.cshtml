@@ -1,0 +1,280 @@
+﻿@model IEnumerable<Credinissan.Affinity.Web.Data.DataObject.Contratante>
+@using Credinissan.Affinity.Web.Data.DataObject; 
+@{ 
+
+
+
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<style>
+    .accordion {
+        background-color: #eee;
+        border: 1px solid #ddd;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        /*border: none;*/
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+    }
+
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+
+    .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+    }
+
+
+    input, select, textarea {
+        max-width: 380px;
+    }
+</style>
+
+
+
+
+@foreach (Contratante contratante in Model)
+{
+    int i = contratante.Id;
+    string accordionTitle = "";
+    if (i > 0)
+    {
+        string[] rut = contratante.Rut.Split('-');
+        accordionTitle = ": " + contratante.Nombre + " " + contratante.ApPaterno + " " + contratante.ApMaterno + " (" + int.Parse(rut[0]).ToString("#,#") + "-" + rut[1] + ")";
+    }
+
+    <button id="accordion_@i" class="accordion" value="@i">
+        <h4>
+            @if (i > 0)
+            {
+                <i class="w3-xlarge fa fa-user-circle-o"></i>
+
+            }
+            else
+            { <i class="w3-xlarge fa fa-user-circle-o"></i>}
+
+            &nbsp; @contratante.TipoContratante.ToString().ToUpper()  <span style="width:300px;" id="accordion_title_@i">@accordionTitle.ToUpper() </span>
+        </h4>
+    </button>
+    <div class="panel" id="panel_@i">
+        <form id="form_@i" action="/Solicitud/SaveContratante" method="post">
+
+            <div class="w3-padding-32">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>RUT</label><label id="lbl_rut_titular_@i" for="rut_@i" class="lbl-rut-invalido w3-hide">Rut inválido</label>
+                            <input class="form-control rut" id="rut_@i" name="rut" type="text" placeholder="12345678-K" value="@contratante.Rut" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>ApPaterno</label>
+                            <input class="form-control" id="apPaterno_@i" name="apPaterno" type="text" value="@contratante.ApPaterno" aria-invalid="true" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>ApMaterno</label>
+                            <input class="form-control" id="apMaterno_@i" name="apMaterno" type="text" value="@contratante.ApMaterno" required>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Nombres</label>
+                            <input class="form-control" id="nombre_@i" name="nombre" type="text" value="@contratante.Nombre" required>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Fecha Nacimiento</label>
+                            <input class="form-control" type="date" required name="fechaNacimiento" id="fechaNacimiento_@i" value="@contratante.FechaNacimiento.ToString("yyyy-MM-dd")" />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Nacionalidad</label>
+                            <input class="form-control" type="text" required id="nacionalidad_@i" name="nacionalidad" value="@contratante.Nacionalidad" />
+                           
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col-md-4">
+
+                        <div class="w3-section">
+                            <label>Estado Civil</label>
+                            <input class="form-control" type="text" required id="estadoCivil_@i" name="estadocivil" value="@contratante.EstadoCivil" />
+                           
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Dirección</label>
+                            <input class="form-control" type="text" required id="direccion_@i" name="direccion" value="@contratante.Direccion" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Comuna</label>
+                            <div class="autocomplete">
+                                @if (contratante.Comuna == null)
+                                {
+                                    <input class="form-control" id="comuna_@i" type="text" required name="comuna" value="" placeholder="Comuna">
+                                }
+                                else
+                                {
+                                    <input class="form-control" id="comuna_@i" type="text" required name="comuna" value="@contratante.Comuna.Nombre" placeholder="Comuna">
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Email</label>
+                            <input class="form-control" required type="email" id="email_@i" name="email" value="@contratante.Email" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Teléfono</label>
+                            <input class="form-control" type="tel" required id="telefono_@i" name="telefono" value="@contratante.Telefono" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Actividad/cargo</label>
+                            <input class="form-control" type="text" id="actividad_@i" name="actividad" required value="@contratante.Actividad" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+
+
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Tipo Trabajador</label>
+
+                            <input class="form-control" type="text" id="tipoTrabajador_@i" name="actividad" required value="@contratante.TipoTrabajador" />
+                         
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Renta/Ingreso mensual</label>
+                            <input class="form-control" type="text" id="renta_@i" name="renta" required value="@contratante.Renta.ToString("$#,0")" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Antigüedad laboral (ingreso)</label>
+                            <input class="form-control" type="date" id="fechaInicioActividad_@i" name="fechaInicioActividad" required value="@contratante.FechaInicioActividad.ToString("yyyy-MM-dd")" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>RUT Empleador <label id="lbl_rut_empleador_@i" for="rutEmpleador_@i" class="lbl-rut-invalido w3-hide">Rut inválido</label></label>
+                            <input class="form-control rut" id="rutEmpleador_@i" name="rutEmpleador" type="text" placeholder="12345678-K" value="@contratante.RutEmpleador">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="w3-section">
+                            <label>Nombre empleador</label>
+                            <input class="form-control" id="nombreEmpleador_@i" name="nombreEmpleador" type="text" value="@contratante.NombreEmpleador">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="w3-section" style="padding-top:25px;">
+                            <input type="hidden" name="tipoContratante" value="@contratante.TipoContratante" />
+                            <input id="idCotizacion" type="hidden" name="idCotizacion" value="@ViewBag.IdCotizacion" />
+                            <input id="idContratante" type="hidden" name="idContratante" value="@contratante.Id" />
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+}
+
+
+
+<script src="~/Scripts/jquery-3.6.4.min.js"></script>
+
+<script>
+
+    $(document).ready(function () {
+
+        @foreach (Contratante contratante in Model)
+            {
+                int i = contratante.Id;
+
+                @:$('#form_@i input').attr('readonly', 'readonly');
+
+            }
+
+
+
+        });
+
+
+</script>
+
+
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
+

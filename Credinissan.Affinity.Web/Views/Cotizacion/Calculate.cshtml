@@ -1,0 +1,121 @@
+﻿@model Credinissan.Affinity.Web.Models.Cotizacion
+@using Credinissan.Affinity.Web.Models
+
+@{
+    ViewBag.Title = "Calculate";
+    Cotizacion cotizacion = Model;
+
+    int PorcPie = (cotizacion.Pie + cotizacion.Retoma) * 100 / cotizacion.ValorVehiculo;
+}
+
+<style>
+
+    .fila {
+        height: 26px;
+    }
+
+    div span.etiqueta {
+        color: #333;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+</style>
+<h2 class="text-center w3-padding-32">Simulación de crédito automotriz</h2>
+
+<div class="w3-padding-32">
+
+    <hr />
+    <table class="table">
+        <tr>
+            <td>
+
+                <div class="fila"><span class="etiqueta">Valor Vehículo</span>: @cotizacion.ValorVehiculo.ToString("$#,0")</div>
+                <div class="fila"><span class="etiqueta">Pie</span>: @cotizacion.Pie.ToString("$#,0")</div>
+                <div class="fila"><span class="etiqueta">Retoma</span>: @cotizacion.Retoma.ToString("$#,0")</div>
+                <div class="fila"><span class="etiqueta">Saldo</span>: @cotizacion.SaldoPrecio.ToString("$#,0")</div>
+                @if (cotizacion.Tipo == Cotizacion.TipoCredito.Convencional)
+                {
+                    <div class="fila"><span class="etiqueta">Plazo</span>: @cotizacion.Plazo meses </div>
+                }
+                else
+                {
+                    int plazo = cotizacion.Plazo - 1;
+                    <div class="fila"><span class="etiqueta">Plazo</span>: @plazo meses + opción de compra </div>
+                }
+                <div class="fila"><span class="etiqueta">Tasa</span>: @cotizacion.Tasa.ToString("0.00%")</div>
+                <div class="fila"><span class="etiqueta">Gasto Operacional</span>: @cotizacion.GastoOperacional.Items.Sum(g => g.Valor).ToString("$#,0")</div>
+
+            </td>
+            <td>
+                <div class="fila"><span class="etiqueta">Desfase</span>: @cotizacion.MontoDesfase.ToString("$#,0") ( @cotizacion.DiasDesfase días ) </div>
+                <div class="fila"><span class="etiqueta">ITE</span>: @cotizacion.ITE.ToString("$#,0")</div>
+                <div class="fila"><span class="etiqueta">MAF</span>: @cotizacion.MAF.ToString("$#,0")</div>
+                <div class="fila"><span class="etiqueta">CAF</span>: @cotizacion.CAF.ToString("$#,0")</div>
+                @if (cotizacion.TablaDesarrollo != null)
+                {
+                    <div class="fila"><span class="etiqueta">Cuota</span>: @cotizacion.TablaDesarrollo.First().Cuota.ToString("$#,0")</div>
+                }
+                <div class="fila"><span class="etiqueta">VFMG</span>: @cotizacion.VFMG.ToString("$#,0")</div>
+            </td>
+
+        </tr>
+
+    </table>
+
+
+
+</div>
+
+<div class="w3-padding-32">
+
+    @Html.ActionLink("Continuar", "Solicitud", new { idCotizacion = ViewBag.IdCotizacion }, new { @Class = "btn btn-default btn-danger red-nissan" })
+</div>
+
+
+@if (cotizacion.TablaDesarrollo != null)
+{<div class="w3-padding-32">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>Mes</td>
+                    <td>Vencimiento</td>
+                    <td>Capital</td>
+                    <td>Interés</td>
+                    <td>Cuota</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (ItemTablaDesarrollo item in cotizacion.TablaDesarrollo)
+                {
+
+                    <tr>
+                        <td>@item.Mes</td>
+                        <td>@item.Vencimiento.ToShortDateString()</td>
+                        <td>@item.Capital.ToString("#,#")</td>
+                        <td>@item.Interes.ToString("#,#")</td>
+                        <td>@item.Cuota.ToString("#,#")</td>
+                    </tr>
+
+                }
+
+            </tbody>
+        </table>
+
+    </div>
+}
+
+<script src="~/Scripts/jquery-3.6.4.min.js"></script>
+<script>
+
+    $("#btnEnviar").click(function () {
+        $.post("@Url.Action("SendCuotation")",null,
+            function (data, status) {
+                if (status == 'success')
+                alert("Data: " + data.Data.msg );
+            });
+    });
+
+</script>
+

@@ -1,0 +1,3902 @@
+[
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214331,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 119421883,
+    "Nombre": "SENSE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214331,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 119421884,
+    "Nombre": "ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 617636671,
+      "Nombre": "VERSA"
+    },
+    "Id": 617637706,
+    "Nombre": "SENSE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 617636671,
+      "Nombre": "VERSA"
+    },
+    "Id": 617637847,
+    "Nombre": "SENSE AT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 617636671,
+      "Nombre": "VERSA"
+    },
+    "Id": 617637913,
+    "Nombre": "ADVANCE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 617636671,
+      "Nombre": "VERSA"
+    },
+    "Id": 617637996,
+    "Nombre": "ADVANCE AT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 860949765,
+      "Nombre": "NOTE"
+    },
+    "Id": 860968569,
+    "Nombre": "SENSE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 860949765,
+      "Nombre": "NOTE"
+    },
+    "Id": 860968654,
+    "Nombre": "SENSE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 860949765,
+      "Nombre": "NOTE"
+    },
+    "Id": 860968953,
+    "Nombre": "ADVANCE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 860949765,
+      "Nombre": "NOTE"
+    },
+    "Id": 860972566,
+    "Nombre": "ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 170629807,
+      "Nombre": "QASHQAI"
+    },
+    "Id": 886009591,
+    "Nombre": "SENSE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 170629807,
+      "Nombre": "QASHQAI"
+    },
+    "Id": 886009592,
+    "Nombre": "ADVANCE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 170629807,
+      "Nombre": "QASHQAI"
+    },
+    "Id": 886009593,
+    "Nombre": "ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008722,
+      "Nombre": "NEW QASHQAI"
+    },
+    "Id": 886009594,
+    "Nombre": "EXCLUSIVE CVT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119213129,
+      "Nombre": "ALTIMA"
+    },
+    "Id": 886009686,
+    "Nombre": "SENSE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119213129,
+      "Nombre": "ALTIMA"
+    },
+    "Id": 886009687,
+    "Nombre": "ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119213129,
+      "Nombre": "ALTIMA"
+    },
+    "Id": 886009688,
+    "Nombre": "EXCLUSIVE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 235787898,
+      "Nombre": "370 Z"
+    },
+    "Id": 886009689,
+    "Nombre": "TOURING AT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 170629807,
+      "Nombre": "QASHQAI"
+    },
+    "Id": 886009694,
+    "Nombre": "SENSE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 170629807,
+      "Nombre": "QASHQAI"
+    },
+    "Id": 886009695,
+    "Nombre": "ADVANCE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 170629807,
+      "Nombre": "QASHQAI"
+    },
+    "Id": 886009696,
+    "Nombre": "ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 170629807,
+      "Nombre": "QASHQAI"
+    },
+    "Id": 886009697,
+    "Nombre": "EXCLUSIVE CVT AWD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119246100,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886009698,
+    "Nombre": "SENSE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119246100,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886009699,
+    "Nombre": "ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119246100,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886009700,
+    "Nombre": "EXCLUSIVE CVT AWD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214173,
+      "Nombre": "MURANO"
+    },
+    "Id": 886009701,
+    "Nombre": "EXCLUSIVE CVT AWD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 698189083,
+      "Nombre": "JUKE"
+    },
+    "Id": 886010215,
+    "Nombre": "ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 698189083,
+      "Nombre": "JUKE"
+    },
+    "Id": 886010218,
+    "Nombre": "SENSE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008619,
+      "Nombre": "NV350"
+    },
+    "Id": 886010231,
+    "Nombre": "WIDE S-LONG SCHOOL BUS 2.5D MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008619,
+      "Nombre": "NV350"
+    },
+    "Id": 886010232,
+    "Nombre": "NARROW LONG CARGO 2.5D MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008619,
+      "Nombre": "NV350"
+    },
+    "Id": 886010234,
+    "Nombre": "WIDE S-LONG CARGO 2.5D MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008619,
+      "Nombre": "NV350"
+    },
+    "Id": 886010235,
+    "Nombre": "WIDE S-LONG BUS 2.5D MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008619,
+      "Nombre": "NV350"
+    },
+    "Id": 886010236,
+    "Nombre": "CARGO ELVN"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008619,
+      "Nombre": "NV350"
+    },
+    "Id": 886010237,
+    "Nombre": "CARGO ELVW"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008619,
+      "Nombre": "NV350"
+    },
+    "Id": 886010238,
+    "Nombre": "NARROW LONG CARGO"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008619,
+      "Nombre": "NV350"
+    },
+    "Id": 886010239,
+    "Nombre": "NARROW S-LONG PASS"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008619,
+      "Nombre": "NV350"
+    },
+    "Id": 886010240,
+    "Nombre": "PASAJEROS"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008619,
+      "Nombre": "NV350"
+    },
+    "Id": 886010241,
+    "Nombre": "PASAJEROS CONFORT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008619,
+      "Nombre": "NV350"
+    },
+    "Id": 886010242,
+    "Nombre": "TURISMO"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008619,
+      "Nombre": "NV350"
+    },
+    "Id": 886010243,
+    "Nombre": "WIDE S-LONG BUS"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008619,
+      "Nombre": "NV350"
+    },
+    "Id": 886010244,
+    "Nombre": "WIDE S-LONG CARGO"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008619,
+      "Nombre": "NV350"
+    },
+    "Id": 886010245,
+    "Nombre": "WIDE S-LONG PASS"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214180,
+      "Nombre": "PLATINA"
+    },
+    "Id": 886010246,
+    "Nombre": "AT AA "
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119245396,
+      "Nombre": "TIIDA"
+    },
+    "Id": 886010247,
+    "Nombre": "DRIVE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119245396,
+      "Nombre": "TIIDA"
+    },
+    "Id": 886010248,
+    "Nombre": "MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214181,
+      "Nombre": "TERRANO PICK UP"
+    },
+    "Id": 886010250,
+    "Nombre": "AX 4X2 L"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214181,
+      "Nombre": "TERRANO PICK UP"
+    },
+    "Id": 886010251,
+    "Nombre": "AX 4X4"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214181,
+      "Nombre": "TERRANO PICK UP"
+    },
+    "Id": 886010252,
+    "Nombre": "AX 4X4 2AB"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214181,
+      "Nombre": "TERRANO PICK UP"
+    },
+    "Id": 886010253,
+    "Nombre": "D22 LCV 4X2 DSL "
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214181,
+      "Nombre": "TERRANO PICK UP"
+    },
+    "Id": 886010254,
+    "Nombre": "D22 LCV 4X4 DSL "
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214181,
+      "Nombre": "TERRANO PICK UP"
+    },
+    "Id": 886010255,
+    "Nombre": "DX 4X2 2.5 TD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214181,
+      "Nombre": "TERRANO PICK UP"
+    },
+    "Id": 886010256,
+    "Nombre": "DX 4X2 DC"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214181,
+      "Nombre": "TERRANO PICK UP"
+    },
+    "Id": 886010257,
+    "Nombre": "DX 4X2 SC"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214181,
+      "Nombre": "TERRANO PICK UP"
+    },
+    "Id": 886010258,
+    "Nombre": "DX 4X4 2.5 TD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214181,
+      "Nombre": "TERRANO PICK UP"
+    },
+    "Id": 886010259,
+    "Nombre": "LCV CD 4X2"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214181,
+      "Nombre": "TERRANO PICK UP"
+    },
+    "Id": 886010260,
+    "Nombre": "LCV CS 4X2"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214181,
+      "Nombre": "TERRANO PICK UP"
+    },
+    "Id": 886010261,
+    "Nombre": "LCV CS 4X2 DSL"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214181,
+      "Nombre": "TERRANO PICK UP"
+    },
+    "Id": 886010262,
+    "Nombre": "LCV CS 4X4 TD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214181,
+      "Nombre": "TERRANO PICK UP"
+    },
+    "Id": 886010263,
+    "Nombre": "LCV CS 4X4 TD CH/C"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214181,
+      "Nombre": "TERRANO PICK UP"
+    },
+    "Id": 886010264,
+    "Nombre": "SINGLE 4X2 DIESEL"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008715,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886010300,
+    "Nombre": "SENSE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008715,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886010301,
+    "Nombre": "ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008715,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886010302,
+    "Nombre": "EXCLUSIVE CVT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008715,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886010303,
+    "Nombre": "DRIVE CVT 2 ROW"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008715,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886010304,
+    "Nombre": "DRIVE CVT 2 ROW 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008766,
+      "Nombre": "NP300"
+    },
+    "Id": 886010448,
+    "Nombre": "DC S 2.5 MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008766,
+      "Nombre": "NP300"
+    },
+    "Id": 886010449,
+    "Nombre": "DC XE 2.5 MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008851,
+      "Nombre": "LEAF"
+    },
+    "Id": 886011641,
+    "Nombre": "LEAF"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008856,
+      "Nombre": "MARCH DRIVE"
+    },
+    "Id": 886011693,
+    "Nombre": "SPORT DRIVE"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008856,
+      "Nombre": "MARCH DRIVE"
+    },
+    "Id": 886011694,
+    "Nombre": "SPORT DRIVE AC"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008855,
+      "Nombre": "MARCH"
+    },
+    "Id": 886011696,
+    "Nombre": "SPORT SENSE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008855,
+      "Nombre": "MARCH"
+    },
+    "Id": 886011697,
+    "Nombre": "SPORT SENSE AT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008855,
+      "Nombre": "MARCH"
+    },
+    "Id": 886011698,
+    "Nombre": "SPORT ADVANCE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008855,
+      "Nombre": "MARCH"
+    },
+    "Id": 886011699,
+    "Nombre": "SPORT ADVANCE AT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214191,
+      "Nombre": "SENTRA"
+    },
+    "Id": 886011702,
+    "Nombre": "ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214191,
+      "Nombre": "SENTRA"
+    },
+    "Id": 886011703,
+    "Nombre": "ADVANCE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214191,
+      "Nombre": "SENTRA"
+    },
+    "Id": 886011704,
+    "Nombre": "EXCLUSIVE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214191,
+      "Nombre": "SENTRA"
+    },
+    "Id": 886011705,
+    "Nombre": "SENSE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 698189083,
+      "Nombre": "JUKE"
+    },
+    "Id": 886011706,
+    "Nombre": "EXCLUSIVE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 698189083,
+      "Nombre": "JUKE"
+    },
+    "Id": 886011707,
+    "Nombre": "EXCLUSIVE CVT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008860,
+      "Nombre": "KICKS"
+    },
+    "Id": 886011716,
+    "Nombre": "SENSE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008860,
+      "Nombre": "KICKS"
+    },
+    "Id": 886011717,
+    "Nombre": "ADVANCE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008860,
+      "Nombre": "KICKS"
+    },
+    "Id": 886011718,
+    "Nombre": "ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008857,
+      "Nombre": "NEW SENTRA"
+    },
+    "Id": 886011720,
+    "Nombre": "SENSE 2.0 MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008857,
+      "Nombre": "NEW SENTRA"
+    },
+    "Id": 886011721,
+    "Nombre": "ADVANCE  2.0 MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008857,
+      "Nombre": "NEW SENTRA"
+    },
+    "Id": 886011722,
+    "Nombre": "ADVANCE 2.0 CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008857,
+      "Nombre": "NEW SENTRA"
+    },
+    "Id": 886011723,
+    "Nombre": "EXCLUSIVE 2.0 CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214173,
+      "Nombre": "MURANO"
+    },
+    "Id": 886011900,
+    "Nombre": "ADVANCE CVT AWD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008860,
+      "Nombre": "KICKS"
+    },
+    "Id": 886012030,
+    "Nombre": "EXCLUSIVE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 617636671,
+      "Nombre": "VERSA"
+    },
+    "Id": 886012094,
+    "Nombre": "DRIVE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 698189083,
+      "Nombre": "JUKE"
+    },
+    "Id": 886012214,
+    "Nombre": "EXCLUSIVE MT SPORT TURBO"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 698189083,
+      "Nombre": "JUKE"
+    },
+    "Id": 886012215,
+    "Nombre": "EXCLUSIVE CVT 4WD SPORT TURBO"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214331,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 886013328,
+    "Nombre": "ADVANCE CVT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214331,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 886013329,
+    "Nombre": "EXCLUSIVE CVT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119246100,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886013330,
+    "Nombre": "SENSE CVT 2F"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119246100,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886013331,
+    "Nombre": "SENSE CVT 4WD 2F"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008971,
+      "Nombre": "NP300 DIESEL"
+    },
+    "Id": 886013332,
+    "Nombre": "DC LE 2.3D AT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008971,
+      "Nombre": "NP300 DIESEL"
+    },
+    "Id": 886013333,
+    "Nombre": "DC LE 2.3D MT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008971,
+      "Nombre": "NP300 DIESEL"
+    },
+    "Id": 886013334,
+    "Nombre": "DC SE 2.3D MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008971,
+      "Nombre": "NP300 DIESEL"
+    },
+    "Id": 886013336,
+    "Nombre": "DC SE 2.3D MT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008971,
+      "Nombre": "NP300 DIESEL"
+    },
+    "Id": 886013337,
+    "Nombre": "DC XE 2.3D MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008971,
+      "Nombre": "NP300 DIESEL"
+    },
+    "Id": 886013339,
+    "Nombre": "DC XE 2.3D MT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008971,
+      "Nombre": "NP300 DIESEL"
+    },
+    "Id": 886013340,
+    "Nombre": "SC S 2.3D MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008971,
+      "Nombre": "NP300 DIESEL"
+    },
+    "Id": 886013341,
+    "Nombre": "SC S 2.3D MT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008715,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886013793,
+    "Nombre": "SENSE 2ROW 4X4"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008715,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886013794,
+    "Nombre": "SENSE 2ROW 4X2"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 505315002,
+      "Nombre": "GT-R"
+    },
+    "Id": 886013973,
+    "Nombre": "3.8G V6 570CV"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008971,
+      "Nombre": "NP300 DIESEL"
+    },
+    "Id": 886014006,
+    "Nombre": "XGEAR 2.3D AT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009065,
+      "Nombre": "NEW VERSA"
+    },
+    "Id": 886014540,
+    "Nombre": "SENSE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009065,
+      "Nombre": "NEW VERSA"
+    },
+    "Id": 886014541,
+    "Nombre": "SENSE MT RADIO TOUCH"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009065,
+      "Nombre": "NEW VERSA"
+    },
+    "Id": 886014542,
+    "Nombre": "SENSE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009065,
+      "Nombre": "NEW VERSA"
+    },
+    "Id": 886014543,
+    "Nombre": "SENSE CVT RADIO TOUCH"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009065,
+      "Nombre": "NEW VERSA"
+    },
+    "Id": 886014544,
+    "Nombre": "ADVANCE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009065,
+      "Nombre": "NEW VERSA"
+    },
+    "Id": 886014545,
+    "Nombre": "ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009065,
+      "Nombre": "NEW VERSA"
+    },
+    "Id": 886014546,
+    "Nombre": "EXCLUSIVE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214174,
+      "Nombre": "370Z"
+    },
+    "Id": 886014547,
+    "Nombre": "CP CVT AT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214174,
+      "Nombre": "370Z"
+    },
+    "Id": 886014548,
+    "Nombre": "TOURING AT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214176,
+      "Nombre": "ALTIMA"
+    },
+    "Id": 886014549,
+    "Nombre": "2.5L ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214176,
+      "Nombre": "ALTIMA"
+    },
+    "Id": 886014550,
+    "Nombre": "2.5L SENSE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214176,
+      "Nombre": "ALTIMA"
+    },
+    "Id": 886014551,
+    "Nombre": "3.5L EXCLUSIVE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214176,
+      "Nombre": "ALTIMA"
+    },
+    "Id": 886014552,
+    "Nombre": "ALTIMA ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214176,
+      "Nombre": "ALTIMA"
+    },
+    "Id": 886014553,
+    "Nombre": "ALTIMA EXCLUSIVE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214176,
+      "Nombre": "ALTIMA"
+    },
+    "Id": 886014554,
+    "Nombre": "ALTIMA SENSE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214175,
+      "Nombre": "JUKE"
+    },
+    "Id": 886014555,
+    "Nombre": "ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214175,
+      "Nombre": "JUKE"
+    },
+    "Id": 886014556,
+    "Nombre": "EXCLUSIVE CVT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214175,
+      "Nombre": "JUKE"
+    },
+    "Id": 886014557,
+    "Nombre": "EXCLUSIVE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214175,
+      "Nombre": "JUKE"
+    },
+    "Id": 886014558,
+    "Nombre": "MID CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214175,
+      "Nombre": "JUKE"
+    },
+    "Id": 886014559,
+    "Nombre": "SENSE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214175,
+      "Nombre": "JUKE"
+    },
+    "Id": 886014560,
+    "Nombre": "UPPER MT TURBO"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214173,
+      "Nombre": "MURANO"
+    },
+    "Id": 886014561,
+    "Nombre": "ADVANCE CVT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214173,
+      "Nombre": "MURANO"
+    },
+    "Id": 886014562,
+    "Nombre": "EXCLUSIVE CVT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214173,
+      "Nombre": "MURANO"
+    },
+    "Id": 886014563,
+    "Nombre": "LE CVT CROSSOVER"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014564,
+    "Nombre": "4X2 FULL"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014565,
+    "Nombre": "4X4 CABINA SIMPLE"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014566,
+    "Nombre": "4X4 FULL"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014567,
+    "Nombre": "4X4 FULL AT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014568,
+    "Nombre": "4X4 STD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014569,
+    "Nombre": "CS 4X4"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014570,
+    "Nombre": "LE 4X4 5AT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014571,
+    "Nombre": "LE 4X4 AT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014572,
+    "Nombre": "LE 4X4 MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014573,
+    "Nombre": "LE CD 4X2"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014574,
+    "Nombre": "SE 4X4"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014575,
+    "Nombre": "SE1 4X2"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014576,
+    "Nombre": "SE1 4X4"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014577,
+    "Nombre": "SE2 2WD MT DC"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014578,
+    "Nombre": "SE2 4WD MT DC"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014579,
+    "Nombre": "SE2 4X2"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014580,
+    "Nombre": "SE2 4X4"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014581,
+    "Nombre": "XE1 4X2"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014582,
+    "Nombre": "XE1 4X4"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008855,
+      "Nombre": "MARCH"
+    },
+    "Id": 886014583,
+    "Nombre": "ACTIVE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008855,
+      "Nombre": "MARCH"
+    },
+    "Id": 886014584,
+    "Nombre": "ADVANCE AT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008855,
+      "Nombre": "MARCH"
+    },
+    "Id": 886014585,
+    "Nombre": "ADVANCE KIT INNOVATION AT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008855,
+      "Nombre": "MARCH"
+    },
+    "Id": 886014586,
+    "Nombre": "ADVANCE KIT INNOVATION MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008855,
+      "Nombre": "MARCH"
+    },
+    "Id": 886014587,
+    "Nombre": "ADVANCE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008855,
+      "Nombre": "MARCH"
+    },
+    "Id": 886014588,
+    "Nombre": "BASE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008855,
+      "Nombre": "MARCH"
+    },
+    "Id": 886014589,
+    "Nombre": "BASE MT AC"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008855,
+      "Nombre": "MARCH"
+    },
+    "Id": 886014590,
+    "Nombre": "DRIVE"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008855,
+      "Nombre": "MARCH"
+    },
+    "Id": 886014591,
+    "Nombre": "DRIVE AC MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008855,
+      "Nombre": "MARCH"
+    },
+    "Id": 886014592,
+    "Nombre": "DRIVE KIT INNOVATION"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008855,
+      "Nombre": "MARCH"
+    },
+    "Id": 886014593,
+    "Nombre": "DRIVE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008855,
+      "Nombre": "MARCH"
+    },
+    "Id": 886014594,
+    "Nombre": "SENCE KIT INNOVATION"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008855,
+      "Nombre": "MARCH"
+    },
+    "Id": 886014595,
+    "Nombre": "SENCE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008855,
+      "Nombre": "MARCH"
+    },
+    "Id": 886014596,
+    "Nombre": "SR KIT INNOVATION"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008855,
+      "Nombre": "MARCH"
+    },
+    "Id": 886014597,
+    "Nombre": "SR MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008855,
+      "Nombre": "MARCH"
+    },
+    "Id": 886014598,
+    "Nombre": "SPORT DRIVE"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008855,
+      "Nombre": "MARCH"
+    },
+    "Id": 886014599,
+    "Nombre": "SPORT DRIVE AC"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214178,
+      "Nombre": "NOTE"
+    },
+    "Id": 886014700,
+    "Nombre": "ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214178,
+      "Nombre": "NOTE"
+    },
+    "Id": 886014701,
+    "Nombre": "ADVANCE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214178,
+      "Nombre": "NOTE"
+    },
+    "Id": 886014702,
+    "Nombre": "DRIVE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214178,
+      "Nombre": "NOTE"
+    },
+    "Id": 886014703,
+    "Nombre": "SENSE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214178,
+      "Nombre": "NOTE"
+    },
+    "Id": 886014704,
+    "Nombre": "SENSE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008766,
+      "Nombre": "NP300"
+    },
+    "Id": 886014705,
+    "Nombre": "DC S 2.5 MT 4X2"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008766,
+      "Nombre": "NP300"
+    },
+    "Id": 886014706,
+    "Nombre": "DC SE 2.3D MT 4X2"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008766,
+      "Nombre": "NP300"
+    },
+    "Id": 886014707,
+    "Nombre": "DC XE 2.3D MT 4X2"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008766,
+      "Nombre": "NP300"
+    },
+    "Id": 886014708,
+    "Nombre": "DC XE 2.5 MT 4X2"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008766,
+      "Nombre": "NP300"
+    },
+    "Id": 886014709,
+    "Nombre": "LE AT 4X4 DC"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008766,
+      "Nombre": "NP300"
+    },
+    "Id": 886014710,
+    "Nombre": "LE MT 4X4 DC"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008766,
+      "Nombre": "NP300"
+    },
+    "Id": 886014711,
+    "Nombre": "S 4X2 SC 2.3D MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008766,
+      "Nombre": "NP300"
+    },
+    "Id": 886014712,
+    "Nombre": "S 4X4 SC"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008766,
+      "Nombre": "NP300"
+    },
+    "Id": 886014713,
+    "Nombre": "SE 4X4 DC"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008766,
+      "Nombre": "NP300"
+    },
+    "Id": 886014714,
+    "Nombre": "XE 4X4 DC"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214179,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 886014715,
+    "Nombre": "ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214179,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 886014716,
+    "Nombre": "ADVANCE CVT 4X2"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214179,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 886014717,
+    "Nombre": "ADVANCE CVT 4X4"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214179,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 886014718,
+    "Nombre": "ADVANCE CVT AWD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214179,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 886014719,
+    "Nombre": "EXCLUSIVE CVT 4X4"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214179,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 886014720,
+    "Nombre": "EXCLUSIVE CVT AWD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214179,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 886014721,
+    "Nombre": "LE"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214179,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 886014722,
+    "Nombre": "LE DSL"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214179,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 886014723,
+    "Nombre": "LE LUX"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214179,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 886014724,
+    "Nombre": "LE LUX DSL"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214179,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 886014725,
+    "Nombre": "NUEVO ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214179,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 886014726,
+    "Nombre": "NUEVO ADVANCE CVT AWD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214179,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 886014727,
+    "Nombre": "NUEVO EXCLUSIVE 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214179,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 886014728,
+    "Nombre": "NUEVO SENSE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214179,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 886014729,
+    "Nombre": "SE"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214179,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 886014730,
+    "Nombre": "SE DSL"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214179,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 886014731,
+    "Nombre": "SE HIGH 2AB AT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214179,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 886014732,
+    "Nombre": "SENSE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214179,
+      "Nombre": "PATHFINDER"
+    },
+    "Id": 886014733,
+    "Nombre": "SENSE CVT 4X2"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 170629807,
+      "Nombre": "QASHQAI"
+    },
+    "Id": 886014734,
+    "Nombre": "4X2 5 MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 170629807,
+      "Nombre": "QASHQAI"
+    },
+    "Id": 886014735,
+    "Nombre": "4X2 5MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 170629807,
+      "Nombre": "QASHQAI"
+    },
+    "Id": 886014736,
+    "Nombre": "4X2 6 MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 170629807,
+      "Nombre": "QASHQAI"
+    },
+    "Id": 886014737,
+    "Nombre": "4X2 6MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 170629807,
+      "Nombre": "QASHQAI"
+    },
+    "Id": 886014738,
+    "Nombre": "4X2 AT CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 170629807,
+      "Nombre": "QASHQAI"
+    },
+    "Id": 886014739,
+    "Nombre": "4X2 AT CVT S/SR"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 170629807,
+      "Nombre": "QASHQAI"
+    },
+    "Id": 886014740,
+    "Nombre": "4X2 CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 170629807,
+      "Nombre": "QASHQAI"
+    },
+    "Id": 886014741,
+    "Nombre": "4X4 AT CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 170629807,
+      "Nombre": "QASHQAI"
+    },
+    "Id": 886014742,
+    "Nombre": "4X4 AT CVT S/SR"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 170629807,
+      "Nombre": "QASHQAI"
+    },
+    "Id": 886014743,
+    "Nombre": "J11 ADVANCE 4X2 MCVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 170629807,
+      "Nombre": "QASHQAI"
+    },
+    "Id": 886014744,
+    "Nombre": "J11 ADVANCE 4X2 MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 170629807,
+      "Nombre": "QASHQAI"
+    },
+    "Id": 886014745,
+    "Nombre": "J11 EXCLUSIVE 4X4 MCVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 170629807,
+      "Nombre": "QASHQAI"
+    },
+    "Id": 886014746,
+    "Nombre": "J11 SENSE 4X2 MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 170629807,
+      "Nombre": "QASHQAI"
+    },
+    "Id": 886014747,
+    "Nombre": "QASHQAI  J10  SENSE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214180,
+      "Nombre": "PLATINA"
+    },
+    "Id": 886014748,
+    "Nombre": "MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214180,
+      "Nombre": "PLATINA"
+    },
+    "Id": 886014749,
+    "Nombre": "MT AA"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214190,
+      "Nombre": "QASHQAI 2"
+    },
+    "Id": 886014800,
+    "Nombre": "4X2 CVT SR"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214190,
+      "Nombre": "QASHQAI 2"
+    },
+    "Id": 886014801,
+    "Nombre": "4X4 CVT SR"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214191,
+      "Nombre": "SENTRA"
+    },
+    "Id": 886014802,
+    "Nombre": "1.8 EXCLUSIVE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214191,
+      "Nombre": "SENTRA"
+    },
+    "Id": 886014803,
+    "Nombre": "1.8 GXE AA"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214191,
+      "Nombre": "SENTRA"
+    },
+    "Id": 886014804,
+    "Nombre": "1.8L ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214191,
+      "Nombre": "SENTRA"
+    },
+    "Id": 886014805,
+    "Nombre": "1.8L ADVANCE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214191,
+      "Nombre": "SENTRA"
+    },
+    "Id": 886014806,
+    "Nombre": "1.8L SENSE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214191,
+      "Nombre": "SENTRA"
+    },
+    "Id": 886014807,
+    "Nombre": "1.8L SENSE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214191,
+      "Nombre": "SENTRA"
+    },
+    "Id": 886014808,
+    "Nombre": "6MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214191,
+      "Nombre": "SENTRA"
+    },
+    "Id": 886014809,
+    "Nombre": "ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214191,
+      "Nombre": "SENTRA"
+    },
+    "Id": 886014810,
+    "Nombre": "ADVANCE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214191,
+      "Nombre": "SENTRA"
+    },
+    "Id": 886014811,
+    "Nombre": "AT CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214191,
+      "Nombre": "SENTRA"
+    },
+    "Id": 886014812,
+    "Nombre": "EXCLUSIVE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214191,
+      "Nombre": "SENTRA"
+    },
+    "Id": 886014813,
+    "Nombre": "S 6MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214191,
+      "Nombre": "SENTRA"
+    },
+    "Id": 886014814,
+    "Nombre": "SENSE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214191,
+      "Nombre": "SENTRA"
+    },
+    "Id": 886014815,
+    "Nombre": "SENTRA ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214191,
+      "Nombre": "SENTRA"
+    },
+    "Id": 886014816,
+    "Nombre": "SENTRA EXCLUSIVE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214191,
+      "Nombre": "SENTRA"
+    },
+    "Id": 886014817,
+    "Nombre": "SENTRA SENSE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214191,
+      "Nombre": "SENTRA"
+    },
+    "Id": 886014818,
+    "Nombre": "SR"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214192,
+      "Nombre": "TEANA"
+    },
+    "Id": 886014819,
+    "Nombre": "2.5 AT CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214192,
+      "Nombre": "TEANA"
+    },
+    "Id": 886014820,
+    "Nombre": "2.5 AT CVT SR"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214192,
+      "Nombre": "TEANA"
+    },
+    "Id": 886014821,
+    "Nombre": "3.5 AT CVT SR"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214193,
+      "Nombre": "TIIDA"
+    },
+    "Id": 886014822,
+    "Nombre": "DRIVE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214193,
+      "Nombre": "TIIDA"
+    },
+    "Id": 886014823,
+    "Nombre": "DRIVE MT PWR"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214193,
+      "Nombre": "TIIDA"
+    },
+    "Id": 886014824,
+    "Nombre": "ENTRY 1.6"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214193,
+      "Nombre": "TIIDA"
+    },
+    "Id": 886014825,
+    "Nombre": "SEDAN AC EQ"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214193,
+      "Nombre": "TIIDA"
+    },
+    "Id": 886014826,
+    "Nombre": "SEDAN S AT NB"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214193,
+      "Nombre": "TIIDA"
+    },
+    "Id": 886014827,
+    "Nombre": "SEDAN S MT NB"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214193,
+      "Nombre": "TIIDA"
+    },
+    "Id": 886014828,
+    "Nombre": "SPORT S AT NB"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214193,
+      "Nombre": "TIIDA"
+    },
+    "Id": 886014829,
+    "Nombre": "SPORT S MT NB"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214194,
+      "Nombre": "V16"
+    },
+    "Id": 886014830,
+    "Nombre": "STD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119246100,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886014831,
+    "Nombre": "NEW 4X2 2.5 CVT SE"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119246100,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886014832,
+    "Nombre": "NEW 4X4 2.5 CVT S"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119246100,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886014833,
+    "Nombre": "NEW 4X4 2.5 CVT SE"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119246100,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886014834,
+    "Nombre": "SENSE 2ROW 4X2"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119246100,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886014835,
+    "Nombre": "SENSE 2ROW 4X4"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119246100,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886014836,
+    "Nombre": "T31 S 4X4 6MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119246100,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886014837,
+    "Nombre": "T31 S 4X4 MCVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119246100,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886014838,
+    "Nombre": "T31 X 4X4 MCVT C DES"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119246100,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886014839,
+    "Nombre": "T31 X 4X4 MCVT XLTD C DES"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119246100,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886014840,
+    "Nombre": "T32 ADVANCE 4X2 MCVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119246100,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886014841,
+    "Nombre": "T32 EXCLISIVE 4X4 MCVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119246100,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886014842,
+    "Nombre": "T32 SENSE 4X2 CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119246100,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886014843,
+    "Nombre": "TREND S"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119246100,
+      "Nombre": "X-TRAIL"
+    },
+    "Id": 886014844,
+    "Nombre": "TREND S AT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 617636671,
+      "Nombre": "VERSA"
+    },
+    "Id": 886014845,
+    "Nombre": "ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 617636671,
+      "Nombre": "VERSA"
+    },
+    "Id": 886014846,
+    "Nombre": "EXCLUSIVE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 617636671,
+      "Nombre": "VERSA"
+    },
+    "Id": 886014847,
+    "Nombre": "NUEVO ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 617636671,
+      "Nombre": "VERSA"
+    },
+    "Id": 886014848,
+    "Nombre": "NUEVO ADVANCE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 617636671,
+      "Nombre": "VERSA"
+    },
+    "Id": 886014849,
+    "Nombre": "NUEVO EXCLUSIVE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 617636671,
+      "Nombre": "VERSA"
+    },
+    "Id": 886014850,
+    "Nombre": "NUEVO SENSE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 617636671,
+      "Nombre": "VERSA"
+    },
+    "Id": 886014851,
+    "Nombre": "NUEVO SENSE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 617636671,
+      "Nombre": "VERSA"
+    },
+    "Id": 886014852,
+    "Nombre": "SENCE AT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 617636671,
+      "Nombre": "VERSA"
+    },
+    "Id": 886014853,
+    "Nombre": "SENCE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 617636671,
+      "Nombre": "VERSA"
+    },
+    "Id": 886014854,
+    "Nombre": "SENSE 1.6 MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 617636671,
+      "Nombre": "VERSA"
+    },
+    "Id": 886014855,
+    "Nombre": "SENSE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 617636671,
+      "Nombre": "VERSA"
+    },
+    "Id": 886014856,
+    "Nombre": "SENSE CVT RADIO TOUCH"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 617636671,
+      "Nombre": "VERSA"
+    },
+    "Id": 886014857,
+    "Nombre": "SENSE MT RADIO TOUCH"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214191,
+      "Nombre": "SENTRA"
+    },
+    "Id": 886014858,
+    "Nombre": "S AT CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 617636671,
+      "Nombre": "VERSA"
+    },
+    "Id": 886014859,
+    "Nombre": "V-DRIVE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009068,
+      "Nombre": "NEW NAVARA"
+    },
+    "Id": 886014860,
+    "Nombre": "SC S 2.3D MT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009068,
+      "Nombre": "NEW NAVARA"
+    },
+    "Id": 886014861,
+    "Nombre": "DC SE 2.3D MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009068,
+      "Nombre": "NEW NAVARA"
+    },
+    "Id": 886014862,
+    "Nombre": "DC XE 2.3D MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009068,
+      "Nombre": "NEW NAVARA"
+    },
+    "Id": 886014863,
+    "Nombre": "DC SE 2.3D MT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009068,
+      "Nombre": "NEW NAVARA"
+    },
+    "Id": 886014864,
+    "Nombre": "DC XE 2.3D MT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009068,
+      "Nombre": "NEW NAVARA"
+    },
+    "Id": 886014865,
+    "Nombre": "DC XE 2.3D AT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009068,
+      "Nombre": "NEW NAVARA"
+    },
+    "Id": 886014866,
+    "Nombre": "DC LE 2.3D MT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009068,
+      "Nombre": "NEW NAVARA"
+    },
+    "Id": 886014867,
+    "Nombre": "DC LE 2.3D AT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009068,
+      "Nombre": "NEW NAVARA"
+    },
+    "Id": 886014868,
+    "Nombre": "DC P4X 2.3D BIT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009067,
+      "Nombre": "NEW KICKS"
+    },
+    "Id": 886014869,
+    "Nombre": "SENSE MT "
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009067,
+      "Nombre": "NEW KICKS"
+    },
+    "Id": 886014870,
+    "Nombre": "ADVANCE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009067,
+      "Nombre": "NEW KICKS"
+    },
+    "Id": 886014871,
+    "Nombre": "ADVANCE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009067,
+      "Nombre": "NEW KICKS"
+    },
+    "Id": 886014872,
+    "Nombre": "EXCLUSIVE CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009067,
+      "Nombre": "NEW KICKS"
+    },
+    "Id": 886014873,
+    "Nombre": "SENSE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009067,
+      "Nombre": "NEW KICKS"
+    },
+    "Id": 886014874,
+    "Nombre": "ADVANCE MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009069,
+      "Nombre": "URVAN"
+    },
+    "Id": 886014875,
+    "Nombre": "WIDE S-LONG CARGO 2.5D MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009069,
+      "Nombre": "URVAN"
+    },
+    "Id": 886014876,
+    "Nombre": "WIDE S-LONG BUS 2.5D MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009070,
+      "Nombre": "URVAN"
+    },
+    "Id": 886014877,
+    "Nombre": "WIDE S-LONG BUS 2.5D MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009070,
+      "Nombre": "URVAN"
+    },
+    "Id": 886014878,
+    "Nombre": "WIDE S-LONG CARGO 2.5D MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 170629807,
+      "Nombre": "QASHQAI"
+    },
+    "Id": 886014879,
+    "Nombre": "MIDNIGHT EDITION"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 617636671,
+      "Nombre": "VERSA"
+    },
+    "Id": 886014880,
+    "Nombre": "V-DRIVE MT RADIO TOUCH PIONEER"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009067,
+      "Nombre": "NEW KICKS"
+    },
+    "Id": 886014881,
+    "Nombre": "EXCLUSIVE ROCK EDITION CVT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008722,
+      "Nombre": "NEW QASHQAI"
+    },
+    "Id": 886014882,
+    "Nombre": "SENSE MT 2WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008722,
+      "Nombre": "NEW QASHQAI"
+    },
+    "Id": 886014884,
+    "Nombre": "ADVANCE MT 2WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008722,
+      "Nombre": "NEW QASHQAI"
+    },
+    "Id": 886014885,
+    "Nombre": "ADVANCE CVT 2WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008722,
+      "Nombre": "NEW QASHQAI"
+    },
+    "Id": 886014886,
+    "Nombre": "ADVANCE CVT PLUS"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886008722,
+      "Nombre": "NEW QASHQAI"
+    },
+    "Id": 886014887,
+    "Nombre": "EXCLUSIVE CVT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009073,
+      "Nombre": "NEW X-TRAIL"
+    },
+    "Id": 886014888,
+    "Nombre": "SENSE CVT 2R"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009073,
+      "Nombre": "NEW X-TRAIL"
+    },
+    "Id": 886014889,
+    "Nombre": "SENSE CVT 3R"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009073,
+      "Nombre": "NEW X-TRAIL"
+    },
+    "Id": 886014890,
+    "Nombre": "ADVANCE CVT 3R"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009073,
+      "Nombre": "NEW X-TRAIL"
+    },
+    "Id": 886014891,
+    "Nombre": "EXCLUSIVE CVT 4WD 3R"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009072,
+      "Nombre": "NEW PATHFINDER"
+    },
+    "Id": 886014892,
+    "Nombre": "SENSE 2WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009072,
+      "Nombre": "NEW PATHFINDER"
+    },
+    "Id": 886014893,
+    "Nombre": "ADVANCE 2WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009072,
+      "Nombre": "NEW PATHFINDER"
+    },
+    "Id": 886014894,
+    "Nombre": "ADVANCE 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009072,
+      "Nombre": "NEW PATHFINDER"
+    },
+    "Id": 886014895,
+    "Nombre": "EXCLUSIVE 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014896,
+    "Nombre": "D CAB 4X4 2.3 AT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014897,
+    "Nombre": "SC S 2.3D MT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014898,
+    "Nombre": "DC SE 2.3D MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014899,
+    "Nombre": "DC XE 2.3D MT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014900,
+    "Nombre": "DC SE 2.3D MT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014901,
+    "Nombre": "DC XE 2.3D MT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014902,
+    "Nombre": "DC XE 2.3D AT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014903,
+    "Nombre": "DC LE 2.3D MT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014904,
+    "Nombre": "DC LE 2.3D AT 4WD"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 119214177,
+      "Nombre": "NAVARA"
+    },
+    "Id": 886014905,
+    "Nombre": "DC P4X 2.3D BIT"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009074,
+      "Nombre": "NEW X-TRAIL E-POWER"
+    },
+    "Id": 886014906,
+    "Nombre": "ADVANCE 3R E-POWER"
+  },
+  {
+    "Modelo": {
+      "Marca": {
+        "Id": 102,
+        "Nombre": "Nissan"
+      },
+      "Id": 886009074,
+      "Nombre": "NEW X-TRAIL E-POWER"
+    },
+    "Id": 886014907,
+    "Nombre": "EXCLUSIVE 3R E-POWER"
+  }
+]

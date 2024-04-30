@@ -1,0 +1,146 @@
+﻿@using Credinissan.Affinity.Web.Data.DataObject;
+@using Credinissan.Affinity.Web.Models;
+
+@{
+    ViewBag.Title = "Evaluacion";
+    Credinissan.Affinity.Web.Data.DataObject.Cotizacion cotizacion = ViewBag.Cotizacion;
+    Solicitud solicitud = cotizacion.Solicitud;
+
+}
+<div id="mensajes">
+
+    @if (ViewBag.Error != null)
+    {
+
+        <div class="alert alert-danger"> <i class="glyphicon glyphicon-exclamation-sign"></i> @ViewBag.Error</div>
+    }
+    @if (ViewBag.Exito != null)
+    {
+        <div class="alert alert-success"><i class="glyphicon glyphicon-thumbs-up"></i>  @ViewBag.Exito</div>
+    }
+
+    @if (ViewBag.Info != null)
+    {
+
+        <div class="alert alert-info">
+            <i class="glyphicon glyphicon-info-sign"></i>@ViewBag.Info
+        </div>
+
+    }
+
+</div>
+
+
+<div class="w3-padding-16">
+    <h1>Solicitud de evaluación</h1>
+</div>
+
+@Html.Partial("ResumenCredito", cotizacion)
+
+@Html.Partial("ResumenContratantes", cotizacion.Solicitud.Contratantes)
+
+<div class="w3-padding-64">
+    <div class="w3-padding-64">
+
+        <button type="button" class="w3-button red-nissan" data-bs-toggle="modal" data-bs-target="#myModalAprobacion">Aprobar </button>
+        <button type="button" class="w3-button texto-red-nissan" style="background-color: white; border: 1px solid #C11718;" data-bs-toggle="modal" data-bs-target="#myModalRechazar">Rechazar </button>
+
+
+    </div>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="myModalAprobacion">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title"><i class="fa fa-check-square-o w3-text-green w3-xlarge"></i> Aprobar evaluación </h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form action="/Evaluacion/Aprobar" method="post">
+                <!-- Modal body -->
+                <div class="modal-body w3-padding-32">
+
+                    <h5>Documentos solicitados:</h5>
+
+                    <div class="w3-padding-24" style="padding-left:20px;">
+
+                        @foreach (DocumentosEvaluacion doc in ViewBag.DocumentosEvaluacion)
+                        {
+
+                            <input type="checkbox" name="documentos[]" value="@doc.Id" @doc.Checked>
+                            <label for="@doc.Name"> @doc.Description</label><br>
+
+                        }
+
+                        <br />
+                        <textarea id="w3review" name="Comentario" rows="4" placeholder="Escribe un comentario para el ejecutivo" cols="160"></textarea>
+                    </div>
+
+                    <input id="idCotizacion" type="hidden" name="idCotizacion" value="@cotizacion.Id" />
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="submit" class="w3-button red-nissan">Aprobado con condiciones</button>
+                    <button type="button" class="w3-button texto-red-nissan" style="background-color: white; border: 1px solid #C11718;" data-bs-dismiss="modal">Cancelar</button>
+
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+<div class="modal" id="myModalRechazar">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title"><i class="fa fa-ban w3-text-red w3-xlarge"></i> Rechazo de evaluación </h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form action="/Evaluacion/Rechazar" method="post">
+                <!-- Modal body -->
+                <div class="modal-body w3-padding-32">
+
+                    <h5>Motivo(s) de rechazo:</h5>
+
+                    <div class="w3-padding-24" style="padding-left:20px;">
+
+                        @foreach (MotivoRechazo motivo in ViewBag.MotivosRechazo)
+                        {
+
+                            <input type="checkbox" id="@motivo.Name" name="motivos[]" value="@motivo.Id">
+                            <label for="@motivo.Name"> @motivo.Description</label><br>
+
+                        }
+                        <br />
+                        <textarea name="comentario" rows="4" placeholder="Escribe un comentario de rechazo" cols="160"></textarea>
+
+                    </div>
+
+
+
+
+                    <input id="idCotizacion" type="hidden" name="idCotizacion" value="@cotizacion.Id" />
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="submit" class="w3-button red-nissan">Rechazar</button>
+                    <button type="button" class="w3-button texto-red-nissan" style="background-color: white; border: 1px solid #C11718;" data-bs-dismiss="modal">Cancelar</button>
+
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+

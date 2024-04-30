@@ -1,0 +1,73 @@
+﻿@model IEnumerable<Credinissan.Affinity.Web.Models.Producto>
+
+@{
+    ViewBag.Title = "Productos";
+}
+
+@if (ViewBag.Error != null)
+{
+
+    <div class="alert alert-danger"> <i class="glyphicon glyphicon-exclamation-sign"></i> @ViewBag.Error</div>
+}
+@if (ViewBag.Exito != null)
+{
+    <div class="alert alert-success"><i class="glyphicon glyphicon-thumbs-up"></i>  @ViewBag.Exito</div>
+}
+
+@if (ViewBag.Info != null)
+{
+
+    <div class="alert alert-info">
+        <i class="glyphicon glyphicon-info-sign"></i> @ViewBag.Info
+    </div>
+
+}
+
+
+
+<h2>Productos</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Active)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AllUsers)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AllVersion)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Active)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AllUsers)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AllVersion)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Tasas", "Tasas", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
