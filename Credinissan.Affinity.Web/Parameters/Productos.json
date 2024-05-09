@@ -150,7 +150,7 @@
         "UFMax": 200,
         "PlazoMin": 6,
         "PlazoMax": 36,
-        "TasaPagare": 0.0271,
+        "TasaPagare": 0.0154,
         "TasaPiso": 0.0267
       },
       {
@@ -159,7 +159,7 @@
         "UFMax": 5000,
         "PlazoMin": 6,
         "PlazoMax": 36,
-        "TasaPagare": 0.0271,
+        "TasaPagare": 0.0154,
         "TasaPiso": 0.0267
       },
       {
@@ -168,7 +168,7 @@
         "UFMax": 200,
         "PlazoMin": 37,
         "PlazoMax": 72,
-        "TasaPagare": 0.0271,
+        "TasaPagare": 0.0154,
         "TasaPiso": 0.0267
       },
       {
@@ -177,7 +177,7 @@
         "UFMax": 5000,
         "PlazoMin": 37,
         "PlazoMax": 72,
-        "TasaPagare": 0.0271,
+        "TasaPagare": 0.0154,
         "TasaPiso": 0.0267
       }
     ],

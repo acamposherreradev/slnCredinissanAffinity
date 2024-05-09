@@ -2,6 +2,7 @@
 using Credinissan.Affinity.Web.Data.Models;
 using Credinissan.Affinity.Web.Models;
 using Newtonsoft.Json;
+using Org.BouncyCastle.Asn1.Ocsp;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -51,8 +52,15 @@ namespace Credinissan.Affinity.Web.Controllers
             //VALORES POR CAPTURAR
             DateTime fechaPagare = DateTime.Today;
             int cantidadVehiculos = 1;
+            bool incluyeSeguroVida=true;
             bool incluyeSeguroDesgravamen = true;
+            bool incluyeSeguroTrimax = true;
+            bool incluyeSeguroCesantia = true;
+            bool incluyeSeguroMultiAsistencia=true;
             bool incluyePatente = true;
+            DateTime fechaNacimiento = Convert.ToDateTime("1987-03-16T00:00:00");
+            List<ModifiedFeeValues> pagoConvenido = null; // new List<ModifiedFeeValues>() { new ModifiedFeeValues { FeeNumber = 4, FeeAmount = 2500000 } };
+            int tipoTrabajador = 1; //Dependiente
             //fin
 
             int vfmg = 0;
@@ -60,10 +68,10 @@ namespace Credinissan.Affinity.Web.Controllers
 
             Producto producto = GetProductos().FirstOrDefault(p => p.Id.Equals(idProducto));
 
-            if (producto.TipoCredito== Cotizacion.TipoCredito.Inteligente)
+            if (producto.TipoCredito == Cotizacion.TipoCredito.Inteligente)
                 vfmg = producto.Plazos.FirstOrDefault(p => p.Id.Equals(plazo)).Vfmg;
 
-            Cotizacion cotizacion = new Cotizacion(fechaPagare, valorVehiculo, cantidadVehiculos, pie, retoma, plazo, vencimiento, producto.TipoCredito, idVersion, vfmg );
+            Cotizacion cotizacion = new Cotizacion(fechaPagare, valorVehiculo, cantidadVehiculos, pie, retoma, plazo, vencimiento, producto.TipoCredito, idVersion, vfmg, pagoConvenido);
 
 
             double valorUF = GetDailyParameterByName("uf", fechaPagare);
@@ -73,29 +81,99 @@ namespace Credinissan.Affinity.Web.Controllers
 
             }
 
-            totalSegurosCarrito += cotizacion.Accesorios.Sum(a => a.Valor);
-            totalSegurosCarrito += cotizacion.Seguros.Sum(a => a.Valor);
+            #region [ Seguros ]
 
+            if (incluyeSeguroTrimax)
+            {
+                Seguro seguroProteccionTotal = GetSeguros().Find(s => s.Codigo == "trimax");
+
+                // se calcula parametros de formula: fechaUltimaCuota y factor de Permanencia
+                DateTime fechaUltimaCuota = vencimiento.AddMonths(cotizacion.Plazo - 1);
+                double factorPermanencia = ((fechaUltimaCuota - fechaPagare).Days / (double)30);
+                // formula
+                seguroProteccionTotal.MontoBruto = factorPermanencia * seguroProteccionTotal.Valor * valorUF;
+
+                cotizacion.Seguros.Add(seguroProteccionTotal);
+            }
+
+            if (incluyeSeguroCesantia)
+            {
+                if((int)(Data.DataObject.Enums.TipoPersona.Natural) == tipoTrabajador)
+                {
+                    Seguro seguroCesantia = GetSeguros().Find(s => s.Codigo == "cesantia");
+
+                    // se calcula parametros de formula: fechaUltimaCuota y factor de Permanencia
+                    DateTime fechaUltimaCuota = vencimiento.AddMonths(cotizacion.Plazo - 1);
+                    double factorPermanencia = ((fechaUltimaCuota - fechaPagare).Days / (double)30);
+                    // formula
+                    seguroCesantia.MontoBruto = factorPermanencia * seguroCesantia.Valor * valorUF;
+
+                    cotizacion.Seguros.Add(seguroCesantia);
+                }
+               
+            }
+
+            if (incluyeSeguroMultiAsistencia)
+            {
+                Seguro seguroSuperMultiasistencia = GetSeguros().Find(s => s.Codigo == "super-multiasistencia");
+
+                // se calcula parametros de formula: fechaUltimaCuota y factor de Permanencia
+                DateTime fechaUltimaCuota = vencimiento.AddMonths(cotizacion.Plazo - 1);
+                double factorPermanencia = ((fechaUltimaCuota - fechaPagare).Days / (double)30);
+                // formula
+                seguroSuperMultiasistencia.MontoBruto = factorPermanencia * seguroSuperMultiasistencia.Valor * valorUF;
+
+                cotizacion.Seguros.Add(seguroSuperMultiasistencia);
+
+            }
+
+            #endregion
+
+            #region [ Accesorios ]
+
+            if (incluyePatente)
+            {
+                cotizacion.Accesorios.Add(new Accesorio { Codigo = "patente", Valor = 600000 });
+
+            }
+
+            #endregion
+
+            totalSegurosCarrito += cotizacion.Accesorios.Sum(a => a.Valor);
+            totalSegurosCarrito += cotizacion.Seguros.Sum(a => a.MontoBruto);
+
+            #region [ Seguro Desgravamen - Aistencia Legal]
 
             if (incluyeSeguroDesgravamen)
             {
                 // intDesgravamen = GetDesgravamen(cotizacion.SaldoPrecio + montoGastoOperacional + totalSegurosCarrito , edad)
-                cotizacion.Seguros.Add(new Seguro { Codigo="desgravamen-menor", Valor= 0 });
+                //cotizacion.Seguros.Add(new Seguro { Codigo = "desgravamen-menor", Valor = 0 });
+
+                // Calculo de asistencia Legal
+                var age = fechaNacimiento != null ? (Utilidades.CalculateAge(fechaNacimiento, DateTime.Now)) : 0;
+
+                double legalAssistanceFactor = age >= 73 ? 0 : 0.022;
+
+                totalSegurosCarrito += ((cotizacion.Plazo + 1) * legalAssistanceFactor * valorUF);
             }
 
-            if (incluyePatente)
+            #endregion
+
+            #region [ Seguro de Vida - Asistencia sala urgencia]
+            if (incluyeSeguroVida) // request.Origin == (int)DealerEnum.Nissan 
             {
-                cotizacion.Accesorios.Add(new Accesorio { Codigo = "patente", Valor = 0 });
-
+                double emergencyAssistanceFactor = 0.0;
+                totalSegurosCarrito += ((cotizacion.Plazo + 1) * emergencyAssistanceFactor * valorUF);
             }
 
-            
-            
+            #endregion
 
-            cotizacion.GastoOperacional  = GetGastoByName("nuevos");
+
+            cotizacion.GastoOperacional = GetGastoByName("nuevos");
             double montoGastoOperacional = cotizacion.GastoOperacional.Items.Sum(g => g.Valor);
             double montoEnUf = (cotizacion.SaldoPrecio + montoGastoOperacional + totalSegurosCarrito) / valorUF;
             Tasa tasa = producto.Tasas.FirstOrDefault(r => r.PlazoMin <= cotizacion.Plazo && cotizacion.Plazo <= r.PlazoMax && r.UFMin < montoEnUf && montoEnUf <= r.UFMax);
+           
             //Tasa TMC = producto.Tasas.FirstOrDefault(r => r.PlazoMin <= cotizacion.Plazo && cotizacion.Plazo <= r.PlazoMax && r.UFMin < montoEnUf && montoEnUf <= r.UFMax);
             if (tasa == null)
             {
@@ -105,13 +183,73 @@ namespace Credinissan.Affinity.Web.Controllers
 
             cotizacion.Tasa = tasa.TasaPagare;
 
-            cotizacion.MontoDesfase  = GetDesfase(cotizacion.SaldoPrecio, montoGastoOperacional, 0, totalSegurosCarrito, cotizacion.DiasDesfase, cotizacion.Tasa);
+            // Se comento porque no se esta usando en el calculo de ITE (getImpuestos)
+            //cotizacion.MontoDesfase = GetDesfase(cotizacion.SaldoPrecio, montoGastoOperacional, 0, totalSegurosCarrito, cotizacion.DiasDesfase, cotizacion.Tasa);
             cotizacion.ITE = GetImpuesto(cotizacion.Plazo, cotizacion.SaldoPrecio, montoGastoOperacional, cotizacion.ITE, totalSegurosCarrito);
             cotizacion.MontoDesfase = GetDesfase(cotizacion.SaldoPrecio, montoGastoOperacional, cotizacion.ITE, totalSegurosCarrito, cotizacion.DiasDesfase, cotizacion.Tasa);
             cotizacion.MAF = cotizacion.SaldoPrecio + montoGastoOperacional + totalSegurosCarrito + cotizacion.ITE;
-            cotizacion.CAF = cotizacion.SaldoPrecio + montoGastoOperacional + totalSegurosCarrito + cotizacion.ITE + cotizacion.MontoDesfase;
+            //cotizacion.CAF = cotizacion.SaldoPrecio + montoGastoOperacional + totalSegurosCarrito + cotizacion.ITE + cotizacion.MontoDesfase;
+            cotizacion.CAF = cotizacion.MAF + cotizacion.MontoDesfase;
 
-            double cuotaInicial = cotizacion.CAF * cotizacion.Tasa / (1 - Math.Pow(1 + cotizacion.Tasa, -cotizacion.Plazo));
+            #region [ Seguro Desgravamen ]
+            double desgravamenInsuranceValue = 0;
+            double gapAmountDesgravamenInsurance = 0;
+            if (incluyeSeguroDesgravamen)
+            {
+                double lifeInsuranceFactor = incluyeSeguroVida ? 0.0250 : 0;
+                double tasaITE = cotizacion.Plazo < 12 ? GetParameterByName("ite-menor-12-meses") : GetParameterByName("ite-mayor-12-meses");
+                var age = fechaNacimiento != null ? (Utilidades.CalculateAge(fechaNacimiento, DateTime.Now)) : 0;
+
+                double desgravamenInsuranceFactor;
+                if (age < 73)
+                    desgravamenInsuranceFactor = GetSeguros().FirstOrDefault(p => p.Codigo.Equals("desgravamen-menor")).Valor;                
+                else
+                    desgravamenInsuranceFactor = GetSeguros().FirstOrDefault(p => p.Codigo.Equals("desgravamen-mayor")).Valor;
+
+                // MAF desgravamenInsuranceValue
+                desgravamenInsuranceValue = (cotizacion.MAF * desgravamenInsuranceFactor) / (1 - (tasaITE + desgravamenInsuranceFactor + lifeInsuranceFactor));
+                // GAP desgravamenInsuranceValue
+                gapAmountDesgravamenInsurance = ((desgravamenInsuranceValue * cotizacion.DiasDesfase * cotizacion.Tasa) / 30);
+                // incorporamos el CAF de desgravamenInsurance al total CAF
+                cotizacion.CAF += desgravamenInsuranceValue + gapAmountDesgravamenInsurance;
+            }
+
+            #endregion
+
+            #region [ Seguro de Vida ]
+            double lifeInsuranceValue = 0;
+            double gapAmountLifeInsurance = 0;
+            if (incluyeSeguroVida) // request.Origin == (int)DealerEnum.Nissan 
+            {
+                double desgravamenInsuranceFactor=0;
+                if (incluyeSeguroDesgravamen)
+                {
+                    var age = fechaNacimiento != null ? (Utilidades.CalculateAge(fechaNacimiento, DateTime.Now)) : 0;
+                    if (age < 73)
+                        desgravamenInsuranceFactor = GetSeguros().FirstOrDefault(p => p.Codigo.Equals("desgravamen-menor")).Valor;
+                    else
+                        desgravamenInsuranceFactor = GetSeguros().FirstOrDefault(p => p.Codigo.Equals("desgravamen-mayor")).Valor;
+                }
+
+                double tasaITE = cotizacion.Plazo < 12 ? GetParameterByName("ite-menor-12-meses") : GetParameterByName("ite-mayor-12-meses");
+                double lifeInsuranceFactor = 0.0250;
+                // MAF lifeInsuranceValue
+                lifeInsuranceValue = (cotizacion.MAF * lifeInsuranceFactor) / (1 - (tasaITE + lifeInsuranceFactor + desgravamenInsuranceFactor));
+                // GAP lifeInsuranceValue
+                gapAmountLifeInsurance = ((lifeInsuranceValue * cotizacion.DiasDesfase * cotizacion.Tasa) / 30);
+                // incorporamos el CAF de lifeInsurance al total CAF
+                cotizacion.CAF += lifeInsuranceValue + gapAmountLifeInsurance;
+
+            }
+            #endregion
+
+            //MAF Final
+            cotizacion.MAF += lifeInsuranceValue + desgravamenInsuranceValue;
+
+            //Monto Desfase
+            cotizacion.MontoDesfase += gapAmountDesgravamenInsurance + gapAmountLifeInsurance;
+
+           double cuotaInicial = cotizacion.CAF * cotizacion.Tasa / (1 - Math.Pow(1 + cotizacion.Tasa, -cotizacion.Plazo));
             cotizacion.GenerarTabla(cuotaInicial, cotizacion.CAF);
 
             Session["Cotizacion"] = cotizacion;
@@ -145,8 +283,7 @@ namespace Credinissan.Affinity.Web.Controllers
 
 
             if (idCotizacion is null)
-            {
-                dbCotizacion = new Data.DataObject.Cotizacion();
+            {                dbCotizacion = new Data.DataObject.Cotizacion();
                 context.Cotizaciones.Add(dbCotizacion);
             }
 
@@ -350,6 +487,8 @@ namespace Credinissan.Affinity.Web.Controllers
             return GetParametros().FirstOrDefault(p=> p.Name.Equals(name)).Value;
         }
 
+
+
         public double GetDailyParameterByName(string name, DateTime day)
         {
 
@@ -409,6 +548,20 @@ namespace Credinissan.Affinity.Web.Controllers
                 string json = r.ReadToEnd();
 
                 return JsonConvert.DeserializeObject<List<GastoOperacional>>(json);
+
+            }
+
+        }
+
+        private List<Seguro> GetSeguros()
+        {
+            string path = Server.MapPath("/") + "Parameters/Seguros.json";
+
+            using (StreamReader r = new StreamReader(path))
+            {
+                string json = r.ReadToEnd();
+
+                return JsonConvert.DeserializeObject<List<Seguro>>(json);
 
             }
 

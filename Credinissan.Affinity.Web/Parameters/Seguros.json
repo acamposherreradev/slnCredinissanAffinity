@@ -1,34 +1,50 @@
 [
   {
     "Id": 1,
-    "Name": "desgravamen-menor",
+    "Codigo": "desgravamen-menor",
     "Description": "Desgravamen",
     "TipoFormula": "mafxtasa",
-    "valor": "0,023"
+    "Valor": "0.04698"
 
   },
   {
     "Id": 2,
-    "Name": "desgravamen-mayor",
+    "Codigo": "desgravamen-mayor",
     "Description": "Desgravamen",
     "TipoFormula": "mafxtasa",
-    "valor": "0,029"
+    "Valor": "0.03511"
 
   },
   {
     "Id": 3,
-    "Name": "cesantia",
+    "Codigo": "cesantia",
     "Description": "Credito Seguro",
     "TipoFormula": "valUFPlazo",
-    "valor": "0,9"
+    "Valor": "0.29"
 
   },
   {
     "Id": 4,
-    "Name": "renta-hospitalaria",
+    "Codigo": "renta-hospitalaria",
     "Description": "Renta Hospitalaria",
     "TipoFormula": "valUFPlazo",
-    "valor": "0,45"
+    "Valor": "0.45"
+
+  },
+  {
+    "Id": 5,
+    "Codigo": "trimax",
+    "Description": "Seguro Protección Total",
+    "TipoFormula": "valUFPlazoFactor",
+    "Valor": "0.099"
+
+  },
+  {
+    "Id": 6,
+    "Codigo": "super-multiasistencia",
+    "Description": "Seguro Super MultiAsistencia",
+    "TipoFormula": "valUFPlazoFactor",
+    "Valor": "0.17"
 
   }
 

@@ -2,7 +2,7 @@
   {
     "Id": 1,
     "Name": "ite-menor-12-meses",
-    "Description": "Impuesto menor a un año",
+    "Description": "Impuesto menor a un aï¿½o",
     "Value": 0.00066,
     "DailyValue": []
 
@@ -10,7 +10,7 @@
   {
     "Id": 2,
     "Name": "ite-mayor-12-meses",
-    "Description": "Impuesto mayor o igual a un año",
+    "Description": "Impuesto mayor o igual a un aï¿½o",
     "Value": 0.008,
     "DailyValue": []
 
@@ -23,8 +23,8 @@
     "DailyValue": [
 
       {
-        "Day": "2024-04-30",
-        "Value": 37261.98
+        "Day": "2024-05-09",
+        "Value": 37306.63
       },
 
       {

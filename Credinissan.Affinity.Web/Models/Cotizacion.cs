@@ -9,7 +9,12 @@ using System.Web;
 namespace Credinissan.Affinity.Web.Models
 {
 
-    
+    public class ModifiedFeeValues
+    {
+        public int FeeNumber { get; set; }
+        public double FeeAmount { get; set; }
+    }
+
     public class ItemTablaDesarrollo
     {
 
@@ -19,7 +24,6 @@ namespace Credinissan.Affinity.Web.Models
         public double Interes { get; set; }
         public double Capital { get; set; }
         public double Cuota { get; set; }
-
         public bool CuotaFija { get; set; }
 
 
@@ -27,9 +31,12 @@ namespace Credinissan.Affinity.Web.Models
 
     public class Seguro
     {
+        public int Id { get; set; }
         public string Codigo { get; set; }
+        public string Description { get; set; }
+        public string TipoFormula { get; set; }
         public double Valor { get; set; }
-
+        public double MontoBruto { get; set; }
     }
 
     public class Accesorio
@@ -70,7 +77,7 @@ namespace Credinissan.Affinity.Web.Models
         public List<Seguro> Seguros { get; set; }
         public List<Accesorio> Accesorios { get; set; }
 
-        public Cotizacion( DateTime fechaPagare, int valorVehiculo,int cantidad, int pie, int retoma,  int plazo, DateTime fechaPrimerVencimiento, TipoCredito tipoCredito, int idVersion, int vfmg=0 )
+        public Cotizacion( DateTime fechaPagare, int valorVehiculo,int cantidad, int pie, int retoma,  int plazo, DateTime fechaPrimerVencimiento, TipoCredito tipoCredito, int idVersion, int vfmg=0, List<ModifiedFeeValues> pagoConvenido=null)
         {
             IdVersion = idVersion;
             FechaPagare = fechaPagare;
@@ -99,8 +106,17 @@ namespace Credinissan.Affinity.Web.Models
 
             if (Tipo == Cotizacion.TipoCredito.Inteligente)
             {
-                VFMG = valorVehiculo * vfmg / 100;
+                VFMG = (double)valorVehiculo * vfmg / 100;
                 FijarUnaCuota(Plazo, VFMG);
+            }
+
+            if (pagoConvenido !=null && pagoConvenido.Any()) // Cuota variable
+            {
+                foreach (var item in pagoConvenido)
+                {
+                    FijarUnaCuota(item.FeeNumber, item.FeeAmount);
+                }
+                
             }
 
 

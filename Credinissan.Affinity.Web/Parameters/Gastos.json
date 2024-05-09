@@ -6,12 +6,12 @@
     "Items": [
       {
         "Id": 1,
-        "Descripcion": "Inscripción",
+        "Descripcion": "Inscripciï¿½n",
         "Valor": 82230
       },
       {
         "Id": 2,
-        "Descripcion": "Notaría",
+        "Descripcion": "Notarï¿½a",
         "Valor": 2380
       },
       {
@@ -27,12 +27,12 @@
   {
     "Id": 2,
     "Name": "refinanciamiento",
-    "Description": "Retención o refinanciemiento",
+    "Description": "Retenciï¿½n o refinanciemiento",
     "Items": [
 
       {
         "Id": 2,
-        "Descripcion": "Notaría",
+        "Descripcion": "Notarï¿½a",
         "Valor": 2380
       }
 
@@ -49,7 +49,7 @@
     "Items": [
       {
         "Id": 2,
-        "Descripcion": "Notaría",
+        "Descripcion": "Notarï¿½a",
         "Valor": 2380
       },
       {
@@ -68,7 +68,7 @@
     "Items": [
       {
         "Id": 2,
-        "Descripcion": "Notaría",
+        "Descripcion": "Notarï¿½a",
         "Valor": 2380
       },
       {
